@@ -4,7 +4,7 @@ Doris's awesome team
 ## The Team:
 - Doris (Teamleader)
 - Mahdi
-- Shandeep
+- Sandeep
 - Guang
 - Wilson
 
