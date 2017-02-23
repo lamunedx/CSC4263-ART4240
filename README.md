@@ -10,3 +10,8 @@ Doris's awesome team
 
 ## Deadlines:
 - Storyboard Presentation: 02/23/17
+- Game Design Document: 03/02/17
+
+## Todo:
+- organize the documents in github
+- construct the wiki page
