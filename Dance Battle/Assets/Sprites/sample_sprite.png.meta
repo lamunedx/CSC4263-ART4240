@@ -1,0 +1,6208 @@
+fileFormatVersion: 2
+guid: 864b6e2aa1a2faa4eabbf0d74d2d6752
+timeCreated: 1489519225
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: idle1
+    21300002: idle2
+    21300004: idle3
+    21300006: idle4
+    21300008: idle5
+    21300010: idle6
+    21300012: idle7
+    21300014: movement1
+    21300016: movement2
+    21300018: movement3
+    21300020: movement4
+    21300022: movement5
+    21300024: movement6
+    21300026: sample_sprite_13
+    21300028: sample_sprite_14
+    21300030: sample_sprite_15
+    21300032: sample_sprite_16
+    21300034: sample_sprite_17
+    21300036: sample_sprite_18
+    21300038: sample_sprite_19
+    21300040: sample_sprite_20
+    21300042: sample_sprite_21
+    21300044: sample_sprite_22
+    21300046: sample_sprite_23
+    21300048: sample_sprite_24
+    21300050: sample_sprite_25
+    21300052: sample_sprite_26
+    21300054: sample_sprite_27
+    21300056: sample_sprite_28
+    21300058: sample_sprite_29
+    21300060: sample_sprite_30
+    21300062: sample_sprite_31
+    21300064: sample_sprite_32
+    21300066: sample_sprite_33
+    21300068: sample_sprite_34
+    21300070: sample_sprite_35
+    21300072: sample_sprite_36
+    21300074: sample_sprite_37
+    21300076: sample_sprite_38
+    21300078: sample_sprite_39
+    21300080: sample_sprite_40
+    21300082: sample_sprite_41
+    21300084: sample_sprite_42
+    21300086: sample_sprite_43
+    21300088: sample_sprite_44
+    21300090: sample_sprite_45
+    21300092: sample_sprite_46
+    21300094: sample_sprite_47
+    21300096: sample_sprite_48
+    21300098: sample_sprite_49
+    21300100: sample_sprite_50
+    21300102: sample_sprite_51
+    21300104: sample_sprite_52
+    21300106: sample_sprite_53
+    21300108: sample_sprite_54
+    21300110: sample_sprite_55
+    21300112: sample_sprite_56
+    21300114: sample_sprite_57
+    21300116: sample_sprite_58
+    21300118: sample_sprite_59
+    21300120: sample_sprite_60
+    21300122: sample_sprite_61
+    21300124: sample_sprite_62
+    21300126: sample_sprite_63
+    21300128: sample_sprite_64
+    21300130: sample_sprite_65
+    21300132: sample_sprite_66
+    21300134: sample_sprite_67
+    21300136: sample_sprite_68
+    21300138: sample_sprite_69
+    21300140: sample_sprite_70
+    21300142: sample_sprite_71
+    21300144: sample_sprite_72
+    21300146: sample_sprite_73
+    21300148: sample_sprite_74
+    21300150: sample_sprite_75
+    21300152: sample_sprite_76
+    21300154: sample_sprite_77
+    21300156: sample_sprite_78
+    21300158: sample_sprite_79
+    21300160: sample_sprite_80
+    21300162: sample_sprite_81
+    21300164: sample_sprite_82
+    21300166: sample_sprite_83
+    21300168: sample_sprite_84
+    21300170: sample_sprite_85
+    21300172: sample_sprite_86
+    21300174: sample_sprite_87
+    21300176: sample_sprite_88
+    21300178: sample_sprite_89
+    21300180: sample_sprite_90
+    21300182: sample_sprite_91
+    21300184: sample_sprite_92
+    21300186: sample_sprite_93
+    21300188: sample_sprite_94
+    21300190: sample_sprite_95
+    21300192: sample_sprite_96
+    21300194: sample_sprite_97
+    21300196: sample_sprite_98
+    21300198: sample_sprite_99
+    21300200: sample_sprite_100
+    21300202: sample_sprite_101
+    21300204: sample_sprite_102
+    21300206: sample_sprite_103
+    21300208: sample_sprite_104
+    21300210: sample_sprite_105
+    21300212: sample_sprite_106
+    21300214: sample_sprite_107
+    21300216: sample_sprite_108
+    21300218: sample_sprite_109
+    21300220: sample_sprite_110
+    21300222: sample_sprite_111
+    21300224: sample_sprite_112
+    21300226: sample_sprite_113
+    21300228: sample_sprite_114
+    21300230: sample_sprite_115
+    21300232: sample_sprite_116
+    21300234: sample_sprite_117
+    21300236: sample_sprite_118
+    21300238: sample_sprite_119
+    21300240: sample_sprite_120
+    21300242: sample_sprite_121
+    21300244: sample_sprite_122
+    21300246: sample_sprite_123
+    21300248: sample_sprite_124
+    21300250: sample_sprite_125
+    21300252: sample_sprite_126
+    21300254: sample_sprite_127
+    21300256: sample_sprite_128
+    21300258: sample_sprite_129
+    21300260: sample_sprite_130
+    21300262: sample_sprite_131
+    21300264: sample_sprite_132
+    21300266: sample_sprite_133
+    21300268: sample_sprite_134
+    21300270: sample_sprite_135
+    21300272: sample_sprite_136
+    21300274: sample_sprite_137
+    21300276: sample_sprite_138
+    21300278: sample_sprite_139
+    21300280: sample_sprite_140
+    21300282: sample_sprite_141
+    21300284: sample_sprite_142
+    21300286: sample_sprite_143
+    21300288: sample_sprite_144
+    21300290: sample_sprite_145
+    21300292: sample_sprite_146
+    21300294: sample_sprite_147
+    21300296: sample_sprite_148
+    21300298: sample_sprite_149
+    21300300: sample_sprite_150
+    21300302: sample_sprite_151
+    21300304: sample_sprite_152
+    21300306: sample_sprite_153
+    21300308: sample_sprite_154
+    21300310: sample_sprite_155
+    21300312: sample_sprite_156
+    21300314: sample_sprite_157
+    21300316: sample_sprite_158
+    21300318: sample_sprite_159
+    21300320: sample_sprite_160
+    21300322: sample_sprite_161
+    21300324: sample_sprite_162
+    21300326: sample_sprite_163
+    21300328: sample_sprite_164
+    21300330: sample_sprite_165
+    21300332: sample_sprite_166
+    21300334: sample_sprite_167
+    21300336: sample_sprite_168
+    21300338: sample_sprite_169
+    21300340: sample_sprite_170
+    21300342: sample_sprite_171
+    21300344: sample_sprite_172
+    21300346: sample_sprite_173
+    21300348: sample_sprite_174
+    21300350: sample_sprite_175
+    21300352: sample_sprite_176
+    21300354: sample_sprite_177
+    21300356: sample_sprite_178
+    21300358: sample_sprite_179
+    21300360: sample_sprite_180
+    21300362: sample_sprite_181
+    21300364: sample_sprite_182
+    21300366: sample_sprite_183
+    21300368: sample_sprite_184
+    21300370: sample_sprite_185
+    21300372: sample_sprite_186
+    21300374: sample_sprite_187
+    21300376: sample_sprite_188
+    21300378: sample_sprite_189
+    21300380: sample_sprite_190
+    21300382: sample_sprite_191
+    21300384: sample_sprite_192
+    21300386: sample_sprite_193
+    21300388: sample_sprite_194
+    21300390: sample_sprite_195
+    21300392: sample_sprite_196
+    21300394: sample_sprite_197
+    21300396: sample_sprite_198
+    21300398: sample_sprite_199
+    21300400: sample_sprite_200
+    21300402: sample_sprite_201
+    21300404: sample_sprite_202
+    21300406: sample_sprite_203
+    21300408: sample_sprite_204
+    21300410: sample_sprite_205
+    21300412: sample_sprite_206
+    21300414: sample_sprite_207
+    21300416: sample_sprite_208
+    21300418: sample_sprite_209
+    21300420: sample_sprite_210
+    21300422: sample_sprite_211
+    21300424: sample_sprite_212
+    21300426: sample_sprite_213
+    21300428: sample_sprite_214
+    21300430: sample_sprite_215
+    21300432: sample_sprite_216
+    21300434: sample_sprite_217
+    21300436: sample_sprite_218
+    21300438: sample_sprite_219
+    21300440: sample_sprite_220
+    21300442: sample_sprite_221
+    21300444: sample_sprite_222
+    21300446: sample_sprite_223
+    21300448: sample_sprite_224
+    21300450: sample_sprite_225
+    21300452: sample_sprite_226
+    21300454: sample_sprite_227
+    21300456: sample_sprite_228
+    21300458: sample_sprite_229
+    21300460: sample_sprite_230
+    21300462: sample_sprite_231
+    21300464: sample_sprite_232
+    21300466: sample_sprite_233
+    21300468: sample_sprite_234
+    21300470: sample_sprite_235
+    21300472: sample_sprite_236
+    21300474: sample_sprite_237
+    21300476: sample_sprite_238
+    21300478: sample_sprite_239
+    21300480: sample_sprite_240
+    21300482: sample_sprite_241
+    21300484: sample_sprite_242
+    21300486: sample_sprite_243
+    21300488: sample_sprite_244
+    21300490: sample_sprite_245
+    21300492: sample_sprite_246
+    21300494: sample_sprite_247
+    21300496: sample_sprite_248
+    21300498: sample_sprite_249
+    21300500: sample_sprite_250
+    21300502: sample_sprite_251
+    21300504: sample_sprite_252
+    21300506: sample_sprite_253
+    21300508: sample_sprite_254
+    21300510: sample_sprite_255
+    21300512: sample_sprite_256
+    21300514: sample_sprite_257
+    21300516: sample_sprite_258
+    21300518: sample_sprite_259
+    21300520: sample_sprite_260
+    21300522: sample_sprite_261
+    21300524: sample_sprite_262
+    21300526: sample_sprite_263
+    21300528: sample_sprite_264
+    21300530: sample_sprite_265
+    21300532: sample_sprite_266
+    21300534: sample_sprite_267
+    21300536: sample_sprite_268
+    21300538: sample_sprite_269
+    21300540: sample_sprite_270
+    21300542: sample_sprite_271
+    21300544: sample_sprite_272
+    21300546: sample_sprite_273
+    21300548: sample_sprite_274
+    21300550: sample_sprite_275
+    21300552: sample_sprite_276
+    21300554: sample_sprite_277
+    21300556: sample_sprite_278
+    21300558: sample_sprite_279
+    21300560: sample_sprite_280
+    21300562: sample_sprite_281
+    21300564: sample_sprite_282
+    21300566: sample_sprite_283
+    21300568: sample_sprite_284
+    21300570: sample_sprite_285
+    21300572: sample_sprite_286
+    21300574: sample_sprite_287
+    21300576: sample_sprite_288
+    21300578: sample_sprite_289
+    21300580: sample_sprite_290
+    21300582: sample_sprite_291
+    21300584: sample_sprite_292
+    21300586: sample_sprite_293
+    21300588: sample_sprite_294
+    21300590: sample_sprite_295
+    21300592: sample_sprite_296
+    21300594: sample_sprite_297
+    21300596: sample_sprite_298
+    21300598: sample_sprite_299
+    21300600: sample_sprite_300
+    21300602: sample_sprite_301
+    21300604: sample_sprite_302
+    21300606: sample_sprite_303
+    21300608: sample_sprite_304
+    21300610: sample_sprite_305
+    21300612: sample_sprite_306
+    21300614: sample_sprite_307
+    21300616: sample_sprite_308
+    21300618: sample_sprite_309
+    21300620: sample_sprite_310
+    21300622: sample_sprite_311
+    21300624: sample_sprite_312
+    21300626: sample_sprite_313
+    21300628: sample_sprite_314
+    21300630: sample_sprite_315
+    21300632: sample_sprite_316
+    21300634: sample_sprite_317
+    21300636: sample_sprite_318
+    21300638: sample_sprite_319
+    21300640: sample_sprite_320
+    21300642: sample_sprite_321
+    21300644: sample_sprite_322
+    21300646: sample_sprite_323
+    21300648: sample_sprite_324
+    21300650: sample_sprite_325
+    21300652: sample_sprite_326
+    21300654: sample_sprite_327
+    21300656: sample_sprite_328
+    21300658: sample_sprite_329
+    21300660: sample_sprite_330
+    21300662: sample_sprite_331
+    21300664: sample_sprite_332
+    21300666: sample_sprite_333
+    21300668: sample_sprite_334
+    21300670: sample_sprite_335
+    21300672: sample_sprite_336
+    21300674: sample_sprite_337
+    21300676: sample_sprite_338
+    21300678: sample_sprite_339
+    21300680: sample_sprite_340
+    21300682: sample_sprite_341
+    21300684: sample_sprite_342
+    21300686: sample_sprite_343
+    21300688: sample_sprite_344
+    21300690: sample_sprite_345
+    21300692: sample_sprite_346
+    21300694: sample_sprite_347
+    21300696: sample_sprite_348
+    21300698: sample_sprite_349
+    21300700: sample_sprite_350
+    21300702: sample_sprite_351
+    21300704: sample_sprite_352
+    21300706: sample_sprite_353
+    21300708: sample_sprite_354
+    21300710: sample_sprite_355
+    21300712: sample_sprite_356
+    21300714: sample_sprite_357
+    21300716: sample_sprite_358
+    21300718: sample_sprite_359
+    21300720: sample_sprite_360
+    21300722: sample_sprite_361
+    21300724: sample_sprite_362
+    21300726: sample_sprite_363
+    21300728: sample_sprite_364
+    21300730: sample_sprite_365
+    21300732: sample_sprite_366
+    21300734: sample_sprite_367
+    21300736: sample_sprite_368
+    21300738: sample_sprite_369
+    21300740: sample_sprite_370
+    21300742: sample_sprite_371
+    21300744: sample_sprite_372
+    21300746: sample_sprite_373
+    21300748: sample_sprite_374
+    21300750: sample_sprite_375
+    21300752: sample_sprite_376
+    21300754: sample_sprite_377
+    21300756: sample_sprite_378
+    21300758: sample_sprite_379
+    21300760: sample_sprite_380
+    21300762: sample_sprite_381
+    21300764: sample_sprite_382
+    21300766: sample_sprite_383
+    21300768: sample_sprite_384
+    21300770: sample_sprite_385
+    21300772: sample_sprite_386
+    21300774: sample_sprite_387
+    21300776: sample_sprite_388
+    21300778: sample_sprite_389
+    21300780: sample_sprite_390
+    21300782: sample_sprite_391
+    21300784: sample_sprite_392
+    21300786: sample_sprite_393
+    21300788: sample_sprite_394
+    21300790: sample_sprite_395
+    21300792: sample_sprite_396
+    21300794: sample_sprite_397
+    21300796: sample_sprite_398
+    21300798: sample_sprite_399
+    21300800: sample_sprite_400
+    21300802: sample_sprite_401
+    21300804: sample_sprite_402
+    21300806: sample_sprite_403
+    21300808: sample_sprite_404
+    21300810: sample_sprite_405
+    21300812: sample_sprite_406
+    21300814: sample_sprite_407
+    21300816: sample_sprite_408
+    21300818: sample_sprite_409
+    21300820: sample_sprite_410
+    21300822: sample_sprite_411
+    21300824: sample_sprite_412
+    21300826: sample_sprite_413
+    21300828: sample_sprite_414
+    21300830: sample_sprite_415
+    21300832: sample_sprite_416
+    21300834: sample_sprite_417
+    21300836: sample_sprite_418
+    21300838: sample_sprite_419
+    21300840: sample_sprite_420
+    21300842: sample_sprite_421
+    21300844: sample_sprite_422
+    21300846: sample_sprite_423
+    21300848: sample_sprite_424
+    21300850: sample_sprite_425
+    21300852: sample_sprite_426
+    21300854: sample_sprite_427
+    21300856: sample_sprite_428
+    21300858: sample_sprite_429
+    21300860: sample_sprite_430
+    21300862: sample_sprite_431
+    21300864: sample_sprite_432
+    21300866: sample_sprite_433
+    21300868: sample_sprite_434
+    21300870: sample_sprite_435
+    21300872: sample_sprite_436
+    21300874: sample_sprite_437
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3937
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3937
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3937
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 3937
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 3937
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3937
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 3937
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: movement1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3885
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: movement2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 3885
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: movement3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 3885
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: movement4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3885
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: movement5
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 3885
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: movement6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 3885
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3819
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3819
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3819
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 3819
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 3819
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3819
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 3819
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 3819
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 3819
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 3819
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 3819
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3761
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 3761
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 3761
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 3761
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 3761
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_29
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 3761
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_30
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 3761
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_31
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3704
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_32
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 3704
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_33
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3704
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_34
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3704
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_35
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 3704
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_36
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 3704
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_37
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 3718
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_38
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 3712
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_39
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 3711
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_40
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 3719
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_41
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 3717
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_42
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 3716
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_43
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 3717
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_44
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3723
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3640
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_46
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3640
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_47
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3640
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_48
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 3640
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_49
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 3640
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_50
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3640
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_51
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 3640
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_52
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 3640
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_53
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 3640
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_54
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 3640
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_55
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 3640
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_56
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 3640
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_57
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3588
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_58
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 3588
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_59
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 3588
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_60
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 3588
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_61
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 3588
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_62
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3588
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_63
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3539
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_64
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 3539
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_65
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3488
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_66
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 3488
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_67
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3488
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_68
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 3488
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_69
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 3488
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_70
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3488
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_71
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 3488
+        width: 60
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_72
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3430
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_73
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 3430
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_74
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3436
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_75
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 3434
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_76
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 3439
+        width: 60
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_77
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 3430
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_78
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 3430
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_79
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3371
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_80
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 3371
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_81
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 3371
+        width: 53
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_82
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 3371
+        width: 93
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_83
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 3371
+        width: 61
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_84
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 3371
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_85
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 3380
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_86
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3283
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_87
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 3283
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_88
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3283
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_89
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3283
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_90
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3283
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_91
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 3283
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_92
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 3283
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_93
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 3283
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_94
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 3283
+        width: 69
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_95
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 3283
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_96
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 3302
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_97
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3172
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_98
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 3172
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_99
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3172
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_100
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 3172
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_101
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 3172
+        width: 36
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_102
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 3172
+        width: 36
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_103
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 3191
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_104
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3106
+        width: 22
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_105
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 3106
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_106
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3106
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_107
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 3106
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_108
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 3106
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_109
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 3106
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_110
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 3106
+        width: 98
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_111
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 3106
+        width: 66
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_112
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 3106
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_113
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 3106
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_114
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 3106
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_115
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3022
+        width: 22
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_116
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3022
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_117
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3022
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_118
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 3022
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_119
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 3022
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_120
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 3022
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_121
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2958
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_122
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2958
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_123
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2958
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_124
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2958
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_125
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2852
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_126
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2852
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_127
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 2881
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_128
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 2852
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_129
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2852
+        width: 26
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_130
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2852
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_131
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2881
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_132
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2797
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_133
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2804
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_134
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2801
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_135
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 2800
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_136
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 2801
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_137
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 2797
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_138
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2811
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_139
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2752
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_140
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 2749
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_141
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2729
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_142
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2729
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_143
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2729
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_144
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2729
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_145
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 2729
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_146
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2677
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_147
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2642
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_148
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 2642
+        width: 29
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_149
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2575
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_150
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2575
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_151
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 2578
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_152
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2575
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_153
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2509
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_154
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2516
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_155
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 2514
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_156
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2510
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_157
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2534
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_158
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2553
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_159
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 2535
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_160
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 2511
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_161
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2513
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_162
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2448
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_163
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2448
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_164
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 2443
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_165
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2459
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_166
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2446
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_167
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 2444
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_168
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2370
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_169
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 2367
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_170
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2370
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_171
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2355
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_172
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2347
+        width: 30
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_173
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 2323
+        width: 33
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_174
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 2307
+        width: 33
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_175
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 2357
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_176
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2383
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_177
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 2369
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_178
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2383
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_179
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 2393
+        width: 51
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_180
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 2383
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_181
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 2363
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_182
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 2362
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_183
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2244
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_184
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 2244
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_185
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 2244
+        width: 75
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_186
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 2283
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_187
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 2273
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_188
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2270
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_189
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 2241
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_190
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 2241
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_191
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2266
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_192
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2268
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_193
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2264
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_194
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2244
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_195
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 2241
+        width: 68
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_196
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 2241
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_197
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 2241
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_198
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 2241
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_199
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2241
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_200
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 2252
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_201
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 2257
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_202
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2170
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_203
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 2170
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_204
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 2170
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_205
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 2170
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_206
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2171
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_207
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 2172
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_208
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 2167
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_209
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 2167
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_210
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2167
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_211
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 2164
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_212
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 2159
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_213
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 2159
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_214
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 2162
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_215
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 2162
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_216
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 2162
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_217
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2100
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_218
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2100
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_219
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2100
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_220
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2100
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_221
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 2100
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_222
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2103
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_223
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 2097
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_224
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 2097
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_225
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2097
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_226
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 2097
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_227
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2010
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_228
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2010
+        width: 37
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_229
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2011
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_230
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 2013
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_231
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 2020
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_232
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 2037
+        width: 65
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_233
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1925
+        width: 32
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_234
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1925
+        width: 28
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_235
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1922
+        width: 31
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_236
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1926
+        width: 31
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_237
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1925
+        width: 35
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_238
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1926
+        width: 35
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_239
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1926
+        width: 24
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_240
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1924
+        width: 27
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_241
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1923
+        width: 31
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_242
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1864
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_243
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1864
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_244
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1787
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_245
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1795
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_246
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1796
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_247
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1796
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_248
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1803
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_249
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1801
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_250
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1801
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_251
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1801
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_252
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1800
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_253
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1726
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_254
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1726
+        width: 60
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_255
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1750
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_256
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1750
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_257
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1726
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_258
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1725
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_259
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1725
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_260
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1725
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_261
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1727
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_262
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1742
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_263
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1728
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_264
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1735
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_265
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1736
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_266
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1654
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_267
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1654
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_268
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1653
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_269
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1653
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_270
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1653
+        width: 84
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_271
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1654
+        width: 108
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_272
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1654
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_273
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1654
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_274
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1615
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_275
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1589
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_276
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1626
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_277
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1589
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_278
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1589
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_279
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1589
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_280
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1589
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_281
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1591
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_282
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1601
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_283
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1589
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_284
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1589
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_285
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1439
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_286
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1439
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_287
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1439
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_288
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1439
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_289
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1439
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_290
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1428
+        width: 67
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_291
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1442
+        width: 52
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_292
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1442
+        width: 27
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_293
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1379
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_294
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1379
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_295
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1379
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_296
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1379
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_297
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1379
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_298
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1379
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_299
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1379
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_300
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1379
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_301
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1379
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_302
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1308
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_303
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1308
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_304
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1308
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_305
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1308
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_306
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1308
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_307
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1308
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_308
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1308
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_309
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1308
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_310
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1308
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_311
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1308
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_312
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1308
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_313
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1237
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_314
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1237
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_315
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1237
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_316
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1237
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_317
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1237
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_318
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1239
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_319
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1239
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_320
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1239
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_321
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1168
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_322
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1168
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_323
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1167
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_324
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1172
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_325
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1168
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_326
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1168
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_327
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1168
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_328
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1172
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_329
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1171
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_330
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1170
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_331
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1099
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_332
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1097
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_333
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1103
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_334
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1096
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_335
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1096
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_336
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1096
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_337
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1096
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_338
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1020
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_339
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1020
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_340
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1020
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_341
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1020
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_342
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1023
+        width: 82
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_343
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1023
+        width: 78
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_344
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1023
+        width: 73
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_345
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 943
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_346
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 991
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_347
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 983
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_348
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 943
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_349
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 943
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_350
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 943
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_351
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 943
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_352
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 943
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_353
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 943
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_354
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 879
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_355
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 879
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_356
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 879
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_357
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 879
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_358
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 877
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_359
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 875
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_360
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 875
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_361
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 806
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_362
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 806
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_363
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 808
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_364
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 807
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_365
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 808
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_366
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 803
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_367
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 804
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_368
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 804
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_369
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 804
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_370
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 804
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_371
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 741
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_372
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 737
+        width: 20
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_373
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 735
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_374
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 739
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_375
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 736
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_376
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 667
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_377
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 669
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_378
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 667
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_379
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 666
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_380
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 667
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_381
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 666
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_382
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 596
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_383
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 589
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_384
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 589
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_385
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 593
+        width: 61
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_386
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 588
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_387
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 583
+        width: 68
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_388
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 526
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_389
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 526
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_390
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 526
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_391
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 526
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_392
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 462
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_393
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 462
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_394
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 462
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_395
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 462
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_396
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 462
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_397
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 462
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_398
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 462
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_399
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 407
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_400
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 407
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_401
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 410
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_402
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 411
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_403
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 407
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_404
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 358
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_405
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 358
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_406
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 302
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_407
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 323
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_408
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 323
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_409
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 324
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_410
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 322
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_411
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 319
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_412
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 322
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_413
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 328
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_414
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 323
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_415
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 246
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_416
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 246
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_417
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 246
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_418
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 246
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_419
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 246
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_420
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 246
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_421
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 182
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_422
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 182
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_423
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 182
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_424
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 182
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_425
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 182
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_426
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 182
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_427
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 126
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_428
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 78
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_429
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 78
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_430
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 78
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_431
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 78
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_432
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 78
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_433
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 15
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_434
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 15
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_435
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 15
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_436
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 15
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sample_sprite_437
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 23
+        width: 164
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
