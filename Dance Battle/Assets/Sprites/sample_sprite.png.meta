@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 864b6e2aa1a2faa4eabbf0d74d2d6752
-timeCreated: 1489519225
+timeCreated: 1489539304
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -69,10 +69,10 @@ TextureImporter:
     21300124: sample_sprite_62
     21300126: sample_sprite_63
     21300128: sample_sprite_64
-    21300130: sample_sprite_65
-    21300132: sample_sprite_66
-    21300134: sample_sprite_67
-    21300136: sample_sprite_68
+    21300130: punch1
+    21300132: punch2
+    21300134: punch3
+    21300136: punch4
     21300138: sample_sprite_69
     21300140: sample_sprite_70
     21300142: sample_sprite_71
@@ -1353,7 +1353,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sample_sprite_65
+      name: punch1
       rect:
         serializedVersion: 2
         x: 7
@@ -1366,7 +1366,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sample_sprite_66
+      name: punch2
       rect:
         serializedVersion: 2
         x: 56
@@ -1379,7 +1379,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sample_sprite_67
+      name: punch3
       rect:
         serializedVersion: 2
         x: 115
@@ -1392,7 +1392,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sample_sprite_68
+      name: punch4
       rect:
         serializedVersion: 2
         x: 182
