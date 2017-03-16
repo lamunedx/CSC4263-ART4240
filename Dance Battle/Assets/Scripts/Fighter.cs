@@ -18,9 +18,9 @@ public class Fighter : MonoBehaviour {
 	void Update () {
 		
 	}
-    public float healthPercent {
-        get {
+    //public float healthPercent {
+    //    get {
 
-        }
-    }
+    //    }
+    //}
 }

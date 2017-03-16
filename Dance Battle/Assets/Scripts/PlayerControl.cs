@@ -2,34 +2,55 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// This script file will allow users to control their character movement
 public class PlayerControl : MonoBehaviour {
 
-  Animator animate;
-	
+  private Animator anime;
+  private Rigidbody2D rigid;
+
+  private bool grounded;
+
 	void Start () {
-    animate = GetComponent<Animator>();
+    anime = GetComponent<Animator>();
+    rigid = GetComponent<Rigidbody2D>();
+    rigid.freezeRotation = true;
+
+    grounded = false;
 	}
-	
 	
 	void Update () {
-    KeyInput();
-    {
-      float move = Input.GetAxis("Horizontal");
-      animate.SetFloat("Speed", move);
+    if (Input.GetKey(KeyCode.RightArrow)) {
+      transform.Translate(Vector2.right * 2f * Time.deltaTime);
+      anime.SetBool("Speed", true);
     }
-
-	}
-
-  void KeyInput() {
-    if(Input.GetKey(KeyCode.RightArrow)) {
-      transform.Translate(Vector2.right * 3f * Time.deltaTime);
-      transform.eulerAngles = new Vector2(0, 0);
+    else if (Input.GetKeyUp(KeyCode.RightArrow)) {
+      anime.SetBool("Speed", false);
     }
 
     if (Input.GetKey(KeyCode.LeftArrow)) {
-      transform.Translate(Vector2.right * -3f * Time.deltaTime);
-      transform.eulerAngles = new Vector2(0, 0);
+      transform.Translate(Vector2.right * -2f * Time.deltaTime);
+      anime.SetBool("Speed", true);
+    }
+    else if (Input.GetKeyUp(KeyCode.LeftArrow)) {
+      anime.SetBool("Speed", false);
+    }
+
+    if (Input.GetKeyDown(KeyCode.Space) && grounded) {
+      anime.SetBool("Jump", true);
+      rigid.AddForce(new Vector2(0, 500f));
+      grounded = false;
+      print("player jumped");
+      print(grounded);
+    }
+    else if (grounded) {
+      anime.SetBool("Jump", false);
+    }
+  }
+
+  private void OnCollisionEnter2D(Collision2D collision) {
+    if (collision.gameObject.name == "Platform") {
+      grounded = true;
+      print("player has landed");
+      print(grounded);
     }
   }
 }
