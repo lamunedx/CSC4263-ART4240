@@ -5,7 +5,7 @@ using UnityEngine;
 public class ColliderUpdater : MonoBehaviour {
 
   public bool iStrigger;
-  private SpriteRenderer renderer;
+  private SpriteRenderer sprite;
   private List<Sprite> animationContainer;
   private Dictionary<int, PolygonCollider2D> spriteColliders;
   private bool _processing;
@@ -24,7 +24,7 @@ public class ColliderUpdater : MonoBehaviour {
         }
         else {
           _processing = true;
-          StartCoroutine(AddSpriteCollider(renderer.sprite));
+          StartCoroutine(AddSpriteCollider(sprite.sprite));
         }
       }
     }
@@ -35,7 +35,6 @@ public class ColliderUpdater : MonoBehaviour {
     int index = animationContainer.IndexOf(sprite);
     PolygonCollider2D spriteCollider = gameObject.AddComponent<PolygonCollider2D>();
     spriteCollider.isTrigger = iStrigger;
-    //    spriteCollider.sharedMaterial = _material;
     spriteColliders.Add(index, spriteCollider);
     yield return new WaitForEndOfFrame();
     Frame = index;
@@ -51,17 +50,17 @@ public class ColliderUpdater : MonoBehaviour {
   }
 
   private void Awake() {
-    renderer = this.GetComponent<SpriteRenderer>();
+    sprite = this.GetComponent<SpriteRenderer>();
 
     animationContainer = new List<Sprite>();
 
     spriteColliders = new Dictionary<int, PolygonCollider2D>();
 
-    Frame = animationContainer.IndexOf(renderer.sprite);
+    Frame = animationContainer.IndexOf(sprite.sprite);
   }
 
   private void LateUpdate() {
     if (!_processing)
-      Frame = animationContainer.IndexOf(renderer.sprite);
+      Frame = animationContainer.IndexOf(sprite.sprite);
   }
 }
