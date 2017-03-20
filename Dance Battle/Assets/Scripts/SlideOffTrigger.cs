@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RightSlideOffTrigger : MonoBehaviour {
+public class SlideOffTrigger : MonoBehaviour {
   private Rigidbody2D player;
   private Rigidbody2D otherPlayer;
 
@@ -12,7 +12,7 @@ public class RightSlideOffTrigger : MonoBehaviour {
       otherPlayer = collision.GetComponent<Rigidbody2D>();
       otherPlayer.transform.Translate(Vector2.right * 3f * Time.deltaTime);
     }
-    else {
+    else if (player.transform.localScale.x == 1) {
       otherPlayer = collision.GetComponent<Rigidbody2D>();
       otherPlayer.transform.Translate(Vector2.left * 3f * Time.deltaTime);
     }

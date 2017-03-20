@@ -14,7 +14,7 @@ public class Player1Control : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-    if (Input.GetKey(KeyCode.RightArrow)) {
+    if (Input.GetKey(KeyCode.RightArrow) && !anime.GetBool("Crouch")) {
       transform.Translate(Vector2.right * 2f * Time.deltaTime);
       anime.SetBool("Speed", true);
     }
@@ -22,12 +22,19 @@ public class Player1Control : MonoBehaviour {
       anime.SetBool("Speed", false);
     }
 
-    if (Input.GetKey(KeyCode.LeftArrow)) {
+    if (Input.GetKey(KeyCode.LeftArrow) && !anime.GetBool("Crouch")) {
       transform.Translate(Vector2.left * 2f * Time.deltaTime);
       anime.SetBool("Speed", true);
     }
     if (Input.GetKeyUp(KeyCode.LeftArrow)) {
       anime.SetBool("Speed", false);
+    }
+
+    if (Input.GetKey(KeyCode.DownArrow)) {
+      anime.SetBool("Crouch", true);
+    }
+    if (Input.GetKeyUp(KeyCode.DownArrow)) {
+      anime.SetBool("Crouch", false);
     }
 
     if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("Ground")) {

@@ -509,8 +509,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 901051303}
-  - component: {fileID: 901051304}
   - component: {fileID: 901051305}
+  - component: {fileID: 901051304}
   m_Layer: 0
   m_Name: SlideOffTrigger
   m_TagString: Untagged
