@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// player 1's control script
 public class Player1Control : MonoBehaviour {
 
   private Animator anime;
@@ -10,7 +11,6 @@ public class Player1Control : MonoBehaviour {
 	void Start () {
     anime = GetComponent<Animator>();
     rigid = GetComponent<Rigidbody2D>();
-
 	}
 	
 	void FixedUpdate () {
@@ -23,7 +23,7 @@ public class Player1Control : MonoBehaviour {
     }
 
     if (Input.GetKey(KeyCode.LeftArrow)) {
-      transform.Translate(Vector2.right * -2f * Time.deltaTime);
+      transform.Translate(Vector2.left * 2f * Time.deltaTime);
       anime.SetBool("Speed", true);
     }
     if (Input.GetKeyUp(KeyCode.LeftArrow)) {
@@ -38,6 +38,9 @@ public class Player1Control : MonoBehaviour {
   private void OnCollisionEnter2D(Collision2D collision) {
     if (collision.gameObject.name == "Platform") {
       anime.SetBool("Ground", true);
+      anime.SetBool("Jump", false);
+    }
+    if (collision.gameObject.name == "Player2") {
       anime.SetBool("Jump", false);
     }
   }
