@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MusicGenerator : MonoBehaviour {
     AudioSource song;
-    public GameObject cube;
+    public GameObject circle;
 
     public float[] samples = new float[512];
     public float[] frequencyRange = new float[8];
@@ -16,6 +16,8 @@ public class MusicGenerator : MonoBehaviour {
     // Use this for initialization
     void Start() {
         song = GetComponent<AudioSource>();
+        StartCoroutine(spawnCircles());
+
     }
 
     // Update is called once per frame
@@ -63,5 +65,22 @@ public class MusicGenerator : MonoBehaviour {
         System.IO.File.AppendAllText(Application.dataPath + "/test.txt", timeStampsOfBeats.ToString());
         Debug.Log("Write = true");
         checkWrite = true;
+    }
+
+    IEnumerator spawnCircles()
+    {
+        Boolean songTimeOut = false;
+        while (!songTimeOut)
+        {
+            if (Time.time >= 90)
+            {
+                songTimeOut = true;
+            }
+            else
+            {
+                yield return new WaitForSeconds(.666666666f);
+                Instantiate(circle, new Vector3(-5.78f, 1f, 0), Quaternion.identity);
+            }
+        }
     }
 }
