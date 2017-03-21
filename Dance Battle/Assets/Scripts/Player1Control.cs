@@ -36,8 +36,24 @@ public class Player1Control : MonoBehaviour {
     if (Input.GetKeyUp(KeyCode.DownArrow)) {
       anime.SetBool("Crouch", false);
     }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            anime.SetBool("myPunch", true);
+        }
+        if (Input.GetKeyUp(KeyCode.Z))
+        {
+            anime.SetBool("myPunch", false);
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            anime.SetBool("myKick", true);
+        }
+        if (Input.GetKeyUp(KeyCode.X))
+        {
+            anime.SetBool("myKick", false);
+        }
 
-    if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("Ground")) {
+        if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("Ground")) {
       rigid.AddForce(Vector2.up * 550f);
     }
   }
