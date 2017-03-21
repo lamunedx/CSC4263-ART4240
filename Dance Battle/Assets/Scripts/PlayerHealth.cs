@@ -5,22 +5,10 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour {
 
 	public float playerHealth = 100f;
-	public float cur_Health = 0f;
-	protected float damage;
-	public GameObject healthBar;
-	// Use this for initialization
-	void Start () {
-	//	player1HealthBar = GameObject.FindWithTag ("p1Health");
-	//	player2HealthBar = GameObject.FindWithTag ("p2Health");
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	protected float damage = 5f;
+	public GameObject otherPlayersHP;
 
-	protected void decreaseHealth()
-	{
+	protected void decreaseHealth() {
 		playerHealth -= damage;
 		float calc_Health = playerHealth / 100f;
 		setHealthBar (calc_Health);
@@ -28,8 +16,17 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 
-	public void setHealthBar(float myHealth)
-	{
-			healthBar.transform.localScale = new Vector3 (myHealth, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+	public void setHealthBar(float myHealth) {
+    otherPlayersHP.transform.localScale = new Vector3 (myHealth, otherPlayersHP.transform.localScale.y, otherPlayersHP.transform.localScale.z);
 	}
+
+  private void OnTriggerEnter2D(Collider2D other) {
+    if (other.gameObject.tag == "player1") {
+      decreaseHealth();
+    }
+
+    if (other.gameObject.tag == "player2") {
+      decreaseHealth();
+    }
+  }
 }

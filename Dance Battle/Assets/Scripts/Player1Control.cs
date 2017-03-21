@@ -33,15 +33,17 @@ public class Player1Control : MonoBehaviour {
       anime.SetBool("Speed", false);
     }
 
-    if (Input.GetKey(KeyCode.DownArrow)) {
+    if (Input.GetKey(KeyCode.DownArrow) && anime.GetBool("Ground")) {
       cap[0].enabled = false;
       cap[1].enabled = true;
+      //GetComponentInChildren<EdgeCollider2D>().enabled = false;
       transform.position = new Vector2(transform.localPosition.x, -3.24f);
       anime.SetBool("Crouch", true);
     }
     if (Input.GetKeyUp(KeyCode.DownArrow)) {
       cap[1].enabled = false;
       cap[0].enabled = true;
+      //GetComponentInChildren<EdgeCollider2D>().enabled = true;
       transform.position = new Vector2(transform.localPosition.x, -2.96f);
       anime.SetBool("Crouch", false);
     }
@@ -54,9 +56,7 @@ public class Player1Control : MonoBehaviour {
     if (Input.GetKeyDown(KeyCode.Alpha9)) {
       anime.SetBool("Punch", true);
       cap[2].enabled = true;
-      //if (cap[2].OverlapPoint(new Vector2(...))) {
-
-      //}
+      cap[2].isTrigger = true;
     }
     if (anime.GetCurrentAnimatorStateInfo(0).IsName("Punch")) {
       anime.SetBool("Punch", false);

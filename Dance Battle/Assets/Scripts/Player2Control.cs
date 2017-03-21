@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // player 2's control script
-public class Player2Control : PlayerHealth {
+public class Player2Control : MonoBehaviour {
 
   private Animator anime;
   private Rigidbody2D rigid;
@@ -19,7 +19,6 @@ public class Player2Control : PlayerHealth {
 		cap = GetComponents<CapsuleCollider2D>();
 
     otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
-		base.damage = 5f;
   }
 
   void Update() {
@@ -40,16 +39,17 @@ public class Player2Control : PlayerHealth {
       anime.SetBool("Speed", false);
     }
 
-    if (Input.GetKey(KeyCode.S) && !anime.GetBool("Jump")) {
+    if (Input.GetKey(KeyCode.S) && anime.GetBool("Ground")) {
       cap[0].enabled = false;
       cap[1].enabled = true;
+      //GetComponentInChildren<EdgeCollider2D>().enabled = false;
       transform.position = new Vector2(transform.localPosition.x, -3.24f);
       anime.SetBool("Crouch", true);
-
     }
     if (Input.GetKeyUp(KeyCode.S)) {
       cap[1].enabled = false;
       cap[0].enabled = true;
+      //GetComponentInChildren<EdgeCollider2D>().enabled = true;
       transform.position = new Vector2(transform.localPosition.x, -2.96f);
       anime.SetBool("Crouch", false);
     }
@@ -62,10 +62,7 @@ public class Player2Control : PlayerHealth {
     if (Input.GetKeyDown(KeyCode.Z)) {
       anime.SetBool("Punch", true);
       cap[2].enabled = true;
-      //if (cap[2].OverlapPoint(new Vector2())) {
-
-
-      //}
+      cap[2].isTrigger = true;
     }
     if (anime.GetCurrentAnimatorStateInfo(0).IsName("Punch")) {
       anime.SetBool("Punch", false);
