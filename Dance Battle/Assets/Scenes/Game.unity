@@ -141,8 +141,8 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.22, y: 1.49}
   m_Direction: 0
---- !u!58 &31886267
-CircleCollider2D:
+--- !u!70 &31886267
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -150,11 +150,11 @@ CircleCollider2D:
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.95, y: 0.7}
-  serializedVersion: 2
-  m_Radius: 0.15
+  m_Offset: {x: -0.77, y: 0.71}
+  m_Size: {x: 1.01, y: 0.17}
+  m_Direction: 1
 --- !u!50 &31886274
 Rigidbody2D:
   serializedVersion: 4
@@ -186,9 +186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1039a42e8311ab7469edcafea36f239f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 100
-  cur_Health: 0
-  healthBar: {fileID: 542502330}
 --- !u!212 &31886277
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -406,8 +403,8 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.22, y: 1.49}
   m_Direction: 0
---- !u!58 &204039178
-CircleCollider2D:
+--- !u!70 &204039178
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -415,11 +412,11 @@ CircleCollider2D:
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.95, y: 0.7}
-  serializedVersion: 2
-  m_Radius: 0.15
+  m_Offset: {x: -0.77, y: 0.71}
+  m_Size: {x: 1.01, y: 0.17}
+  m_Direction: 1
 --- !u!1 &373578172
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,8 +575,8 @@ GameObject:
   - component: {fileID: 901051305}
   - component: {fileID: 901051304}
   m_Layer: 0
-  m_Name: SlideOffTrigger
-  m_TagString: p1Health
+  m_Name: SliderOffTrigger
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -606,7 +603,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 1.11}
   m_Points:
@@ -1171,7 +1168,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 1.11}
   m_Points:

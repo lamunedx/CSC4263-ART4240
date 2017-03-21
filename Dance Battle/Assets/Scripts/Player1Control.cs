@@ -7,13 +7,16 @@ public class Player1Control : MonoBehaviour {
 
   private Animator anime;
   private Rigidbody2D rigid;
+  private CapsuleCollider2D[] cap;
 
 	void Start () {
     anime = GetComponent<Animator>();
     rigid = GetComponent<Rigidbody2D>();
+    cap = GetComponents<CapsuleCollider2D>();
 	}
-	
-	void FixedUpdate () {
+
+	void Update () {
+    // movement keys -----------------------------------------------------------
     if (Input.GetKey(KeyCode.RightArrow) && !anime.GetBool("Crouch")) {
       transform.Translate(Vector2.right * 2f * Time.deltaTime);
       anime.SetBool("Speed", true);
@@ -31,30 +34,33 @@ public class Player1Control : MonoBehaviour {
     }
 
     if (Input.GetKey(KeyCode.DownArrow)) {
+      cap[0].enabled = false;
+      cap[1].enabled = true;
+      transform.position = new Vector2(transform.localPosition.x, -3.24f);
       anime.SetBool("Crouch", true);
     }
     if (Input.GetKeyUp(KeyCode.DownArrow)) {
+      cap[1].enabled = false;
+      cap[0].enabled = true;
+      transform.position = new Vector2(transform.localPosition.x, -2.96f);
       anime.SetBool("Crouch", false);
     }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            anime.SetBool("myPunch", true);
-        }
-        if (Input.GetKeyUp(KeyCode.Z))
-        {
-            anime.SetBool("myPunch", false);
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            anime.SetBool("myKick", true);
-        }
-        if (Input.GetKeyUp(KeyCode.X))
-        {
-            anime.SetBool("myKick", false);
-        }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("Ground")) {
+    if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("Ground")) {
       rigid.AddForce(Vector2.up * 550f);
+    }
+
+    // action keys -------------------------------------------------------------
+    if (Input.GetKeyDown(KeyCode.Alpha9)) {
+      anime.SetBool("Punch", true);
+      cap[2].enabled = true;
+      //if (cap[2].OverlapPoint(new Vector2(...))) {
+
+      //}
+    }
+    if (anime.GetCurrentAnimatorStateInfo(0).IsName("Punch")) {
+      anime.SetBool("Punch", false);
+      cap[2].enabled = false;
     }
   }
 
