@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // player 2's control script
-public class Player2Control : MonoBehaviour {
+public class Player2Control : PlayerHealth {
 
   private Animator anime;
   private Rigidbody2D rigid;
+	private CapsuleCollider2D[] Coll;
+	private CircleCollider2D cColl;
+	private bool inAir;
+	private bool isCrouching;
 
   // reference to the other player
   public GameObject otherPlayer;
@@ -15,12 +19,15 @@ public class Player2Control : MonoBehaviour {
   void Start() {
     anime = GetComponent<Animator>();
     rigid = GetComponent<Rigidbody2D>();
+		Coll = GetComponents<CapsuleCollider2D> ();
+		cColl = GetComponent<CircleCollider2D> ();
 
     otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
+		base.damage = 5f;
   }
 
   void Update() {
-    if (Input.GetKey(KeyCode.D)) {
+		if (Input.GetKey(KeyCode.D) && isCrouching == false) {
       transform.Translate(Vector2.right * 2f * Time.deltaTime);
       anime.SetBool("Speed", true);
     }
@@ -28,7 +35,7 @@ public class Player2Control : MonoBehaviour {
       anime.SetBool("Speed", false);
     }
 
-    if (Input.GetKey(KeyCode.A)) {
+		if (Input.GetKey(KeyCode.A) && isCrouching == false) {
       transform.Translate(Vector2.left * 2f * Time.deltaTime);
       anime.SetBool("Speed", true);
     }
@@ -36,7 +43,7 @@ public class Player2Control : MonoBehaviour {
       anime.SetBool("Speed", false);
     }
 
-    if (Input.GetKeyDown(KeyCode.W) && anime.GetBool("Ground")) {
+		if (Input.GetKeyDown(KeyCode.W) && isCrouching == false && inAir == false) {
       rigid.AddForce(new Vector2(0, 550f));
     }
 
@@ -49,12 +56,43 @@ public class Player2Control : MonoBehaviour {
       rigid.transform.localScale = new Vector2(-1f, rigid.transform.localScale.y);
       otherRigid.transform.localScale = new Vector2(1f, otherRigid.transform.localScale.y);
     }
+
+		if (Input.GetKey(KeyCode.S) && inAir == false) {
+			Coll [0].enabled = false;
+			Coll [1].enabled = true;
+			transform.position = new Vector2 (transform.localPosition.x,-3.24f);
+			anime.SetBool("Crouch", true);
+			isCrouching = true;
+
+		}
+		if (Input.GetKeyUp(KeyCode.S)) {
+			Coll [1].enabled = false;
+			Coll [0].enabled = true;
+			transform.position = new Vector2 (transform.localPosition.x,-2.96f);
+			anime.SetBool("Crouch", false);
+			isCrouching = false;
+		}
+
+		if (Input.GetKeyDown(KeyCode.UpArrow) && inAir == false && isCrouching == false) {
+			rigid.AddForce(Vector2.up * 550f);
+		}
+
+		if(Input.GetKey(KeyCode.Y)){
+			cColl.enabled = true;
+			anime.SetBool ("Punch",true);
+		}
+
+		if(Input.GetKeyUp(KeyCode.Y)){
+			cColl.enabled = false;
+			anime.SetBool ("Punch",false);
+		}
   }
 
   private void OnCollisionEnter2D(Collision2D collision) {
     if (collision.gameObject.name == "Platform") {
       anime.SetBool("Ground", true);
       anime.SetBool("Jump", false);
+			inAir = false;
     }
   }
 
@@ -62,6 +100,16 @@ public class Player2Control : MonoBehaviour {
     if (collision.gameObject.name == "Platform") {
       anime.SetBool("Ground", false);
       anime.SetBool("Jump", true);
+			inAir = true;
     }
   }
+
+	//detect punching
+	private void OnTriggerEnter2D(Collider2D colli){
+		print (colli.gameObject.name);
+		if(colli.gameObject.transform.tag.Equals("player1"))
+		{
+			this.decreaseHealth();
+		}
+	}
 }
