@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - p1Health
+  - p2Health
+  - player1
+  - player2
   layers:
   - Default
   - TransparentFX

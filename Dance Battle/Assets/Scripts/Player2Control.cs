@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // player 2's control script
-public class Player2Control : MonoBehaviour {
+public class Player2Control : PlayerHealth {
 
   private Animator anime;
   private Rigidbody2D rigid;
 	private CapsuleCollider2D[] Coll;
+	private CircleCollider2D cColl;
 	private bool inAir;
 	private bool isCrouching;
 
@@ -19,8 +20,10 @@ public class Player2Control : MonoBehaviour {
     anime = GetComponent<Animator>();
     rigid = GetComponent<Rigidbody2D>();
 		Coll = GetComponents<CapsuleCollider2D> ();
+		cColl = GetComponent<CircleCollider2D> ();
 
     otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
+		base.damage = 5f;
   }
 
   void Update() {
@@ -73,6 +76,16 @@ public class Player2Control : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.UpArrow) && inAir == false && isCrouching == false) {
 			rigid.AddForce(Vector2.up * 550f);
 		}
+
+		if(Input.GetKey(KeyCode.Y)){
+			cColl.enabled = true;
+			anime.SetBool ("Punch",true);
+		}
+
+		if(Input.GetKeyUp(KeyCode.Y)){
+			cColl.enabled = false;
+			anime.SetBool ("Punch",false);
+		}
   }
 
   private void OnCollisionEnter2D(Collision2D collision) {
@@ -90,4 +103,13 @@ public class Player2Control : MonoBehaviour {
 			inAir = true;
     }
   }
+
+	//detect punching
+	private void OnTriggerEnter2D(Collider2D colli){
+		print (colli.gameObject.name);
+		if(colli.gameObject.transform.tag.Equals("player1"))
+		{
+			this.decreaseHealth();
+		}
+	}
 }

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-	public float max_Health = 100f;
+	public float playerHealth = 100f;
 	public float cur_Health = 0f;
+	protected float damage;
 	public GameObject healthBar;
 	// Use this for initialization
 	void Start () {
-		cur_Health = max_Health;
-		InvokeRepeating ("decreaseHealth", 1f, 1f);
+	//	player1HealthBar = GameObject.FindWithTag ("p1Health");
+	//	player2HealthBar = GameObject.FindWithTag ("p2Health");
 	}
 	
 	// Update is called once per frame
@@ -18,15 +19,17 @@ public class PlayerHealth : MonoBehaviour {
 		
 	}
 
-	void decreaseHealth()
+	protected void decreaseHealth()
 	{
-		cur_Health -= 2f;
-		float calc_Health = cur_Health / max_Health;
+		playerHealth -= damage;
+		float calc_Health = playerHealth / 100f;
 		setHealthBar (calc_Health);
+
 	}
+
 
 	public void setHealthBar(float myHealth)
 	{
-		healthBar.transform.localScale = new Vector3 (myHealth,healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+			healthBar.transform.localScale = new Vector3 (myHealth, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
 	}
 }

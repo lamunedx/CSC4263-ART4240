@@ -105,9 +105,10 @@ GameObject:
   - component: {fileID: 31886276}
   - component: {fileID: 31886265}
   - component: {fileID: 31886266}
+  - component: {fileID: 31886267}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +133,7 @@ CapsuleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 31886264}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -140,6 +141,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.22, y: 1.49}
   m_Direction: 0
+--- !u!58 &31886267
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 31886264}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.95, y: 0.7}
+  serializedVersion: 2
+  m_Radius: 0.15
 --- !u!50 &31886274
 Rigidbody2D:
   serializedVersion: 4
@@ -171,6 +186,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1039a42e8311ab7469edcafea36f239f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: 100
+  cur_Health: 0
+  healthBar: {fileID: 542502330}
 --- !u!212 &31886277
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -251,9 +269,10 @@ GameObject:
   - component: {fileID: 204039171}
   - component: {fileID: 204039172}
   - component: {fileID: 204039177}
+  - component: {fileID: 204039178}
   m_Layer: 0
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,6 +288,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d9dae5c4d8f11498ca749eb0d71d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: 100
+  cur_Health: 0
+  healthBar: {fileID: 2061015827}
   otherPlayer: {fileID: 31886264}
 --- !u!70 &204039172
 CapsuleCollider2D:
@@ -376,7 +398,7 @@ CapsuleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 204039170}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -384,6 +406,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.22, y: 1.49}
   m_Direction: 0
+--- !u!58 &204039178
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 204039170}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.95, y: 0.7}
+  serializedVersion: 2
+  m_Radius: 0.15
 --- !u!1 &373578172
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,8 +510,8 @@ GameObject:
   - component: {fileID: 542502333}
   - component: {fileID: 542502332}
   m_Layer: 5
-  m_Name: Health
-  m_TagString: Untagged
+  m_Name: p2Health
+  m_TagString: p2Health
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -543,7 +579,7 @@ GameObject:
   - component: {fileID: 901051304}
   m_Layer: 0
   m_Name: SlideOffTrigger
-  m_TagString: Untagged
+  m_TagString: p1Health
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -570,7 +606,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 1.11}
   m_Points:
@@ -1135,7 +1171,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 1.11}
   m_Points:
@@ -1164,8 +1200,8 @@ GameObject:
   - component: {fileID: 2061015830}
   - component: {fileID: 2061015829}
   m_Layer: 5
-  m_Name: Health
-  m_TagString: Untagged
+  m_Name: p1Health
+  m_TagString: p1Health
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
