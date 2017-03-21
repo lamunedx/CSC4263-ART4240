@@ -60,7 +60,7 @@ public class MusicGenerator : MonoBehaviour {
     }
     void saveToFile()
     {
-        System.IO.File.AppendAllText(Application.dataPath + "/newText.txt", timeStampsOfBeats.ToString());
+        System.IO.File.AppendAllText(Application.dataPath + "/test.txt", timeStampsOfBeats.ToString());
         Debug.Log("Write = true");
         checkWrite = true;
     }
