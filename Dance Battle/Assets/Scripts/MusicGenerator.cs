@@ -28,7 +28,7 @@ public class MusicGenerator : MonoBehaviour {
         {
             timeStampsOfBeats.Add(song.time);
         }
-        if(Time.time > 20 && checkWrite == false)
+        if(Time.time > 200 && checkWrite == false)
         {
             saveToFile();
         }
@@ -62,8 +62,12 @@ public class MusicGenerator : MonoBehaviour {
     }
     void saveToFile()
     {
-        System.IO.File.AppendAllText(Application.dataPath + "/test.txt", timeStampsOfBeats.ToString());
-        Debug.Log("Write = true");
+        float[] timeStampArray = timeStampsOfBeats.ToArray();
+        foreach (float timeStamp in timeStampArray)
+        {
+            System.IO.File.AppendAllText(Application.dataPath + "/test.txt", Convert.ToString(timeStamp) + Environment.NewLine);
+            
+        }
         checkWrite = true;
     }
 
