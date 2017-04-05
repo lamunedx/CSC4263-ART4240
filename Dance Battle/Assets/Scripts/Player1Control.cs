@@ -20,10 +20,21 @@ public class Player1Control : MonoBehaviour {
   void Update() {
     // movement keys -----------------------------------------------------------
     if(Input.GetKey(KeyCode.UpArrow) && OnGround) {
-      body.AddForce(Vector2.up * 225f);
-      animator.Play("Jumping");
+      body.AddForce(Vector2.up * 300f);
+      animator.Play("JumpingUp");
       OnGround = false;
     }
+	if (!OnGround) {
+		if (body.velocity.y < 1 && body.velocity.y >= 0) {
+			animator.Play ("Jumping");
+		} 
+		else if (body.velocity.y > 1) {
+			animator.Play ("JumpHang");
+		} 
+		else {
+			animator.Play ("JumpingDown");
+		}
+	}
     //else if(!OnGround && body.velocity.y != 0) {
     //  animator.Play("Jumping");
     //}
