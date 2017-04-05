@@ -5,51 +5,79 @@ using UnityEngine;
 // player 1's control script
 public class Player1Control : MonoBehaviour {
 
-  private Animator animator;
-  private Rigidbody2D body;
-  private bool Crouched;
-  private bool OnGround;
+  private Animator anime;
+  private Rigidbody2D rigid;
+  private CapsuleCollider2D[] cap;
 
 	void Start () {
-    animator = GetComponent<Animator>();
-    body = GetComponent<Rigidbody2D>();
-    Crouched = false;
-    OnGround = true;
+    anime = GetComponent<Animator>();
+    rigid = GetComponent<Rigidbody2D>();
+    cap = GetComponents<CapsuleCollider2D>();
 	}
 
-  void Update() {
+	void Update () {
     // movement keys -----------------------------------------------------------
-    if(Input.GetKey(KeyCode.UpArrow) && OnGround) {
-      body.AddForce(Vector2.up * 300f);
-      animator.Play("JumpingUp");
-      OnGround = false;
+    if (Input.GetKey(KeyCode.RightArrow) && !anime.GetBool("Crouch")) {
+      transform.Translate(Vector2.right * 2f * Time.deltaTime);
+      anime.SetBool("Speed", true);
     }
-    else if(!OnGround && body.velocity.y != 0) {
-      animator.Play("Jumping");
+    if (Input.GetKeyUp(KeyCode.RightArrow)) {
+      anime.SetBool("Speed", false);
     }
-    else if(!OnGround && body.velocity.y == 0) {
-      animator.Play("JumpHang");
+
+    if (Input.GetKey(KeyCode.LeftArrow) && !anime.GetBool("Crouch")) {
+      transform.Translate(Vector2.left * 2f * Time.deltaTime);
+      anime.SetBool("Speed", true);
     }
-    else if(Input.GetKey(KeyCode.UpArrow) && OnGround) {
-      animator.Play("JumpingDown");
-      animator.Play("Idle");
+    if (Input.GetKeyUp(KeyCode.LeftArrow)) {
+      anime.SetBool("Speed", false);
     }
-    if (Input.GetKey(KeyCode.DownArrow) && !Crouched) {
-      animator.Play("CrouchingDown");
-      Crouched = true;
+
+    if (Input.GetKey(KeyCode.DownArrow) && anime.GetBool("Ground")) {
+      cap[0].enabled = false;
+      cap[1].enabled = true;
+      //GetComponentInChildren<EdgeCollider2D>().enabled = false;
+      transform.position = new Vector2(transform.localPosition.x, -3.24f);
+      anime.SetBool("Crouch", true);
     }
-    else if(Input.GetKey(KeyCode.DownArrow) && Crouched) {
-      animator.Play("Crouching");
+    if (Input.GetKeyUp(KeyCode.DownArrow)) {
+      cap[1].enabled = false;
+      cap[0].enabled = true;
+      //GetComponentInChildren<EdgeCollider2D>().enabled = true;
+      transform.position = new Vector2(transform.localPosition.x, -2.96f);
+      anime.SetBool("Crouch", false);
     }
-    else if (Input.GetKeyUp(KeyCode.DownArrow) && Crouched) {
-      animator.Play("CrouchingUp");
-      animator.Play("Idle");
+
+    if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("Ground")) {
+      rigid.AddForce(Vector2.up * 550f);
+    }
+
+    // action keys -------------------------------------------------------------
+    if (Input.GetKeyDown(KeyCode.Alpha9)) {
+      anime.SetBool("Punch", true);
+      cap[2].enabled = true;
+      cap[2].isTrigger = true;
+    }
+    if (anime.GetCurrentAnimatorStateInfo(0).IsName("Punch")) {
+      anime.SetBool("Punch", false);
+      cap[2].enabled = false;
     }
   }
 
   private void OnCollisionEnter2D(Collision2D collision) {
-    if(collision.gameObject.name == "Platform") {
-      OnGround = true;
+    if (collision.gameObject.name == "Platform") {
+      anime.SetBool("Ground", true);
+      anime.SetBool("Jump", false);
+    }
+    if (collision.gameObject.name == "Player2") {
+      anime.SetBool("Jump", false);
+    }
+  }
+
+  private void OnCollisionExit2D(Collision2D collision) {
+    if (collision.gameObject.name == "Platform") {
+      anime.SetBool("Ground", false);
+      anime.SetBool("Jump", true);
     }
   }
 }
