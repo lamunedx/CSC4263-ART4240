@@ -37,7 +37,7 @@ public class Player1Control : MonoBehaviour {
       cap[0].enabled = false;
       cap[1].enabled = true;
       //GetComponentInChildren<EdgeCollider2D>().enabled = false;
-      transform.position = new Vector2(transform.localPosition.x, -3.24f);
+      //transform.position = new Vector2(transform.localPosition.x, -3.24f);
       anime.SetBool("Crouch", true);
     }
     if (Input.GetKeyUp(KeyCode.DownArrow)) {
@@ -53,7 +53,7 @@ public class Player1Control : MonoBehaviour {
     }
 
     // action keys -------------------------------------------------------------
-    if (Input.GetKeyDown(KeyCode.Alpha9)) {
+    if (Input.GetKeyDown(KeyCode.I)) {
       anime.SetBool("Punch", true);
       cap[2].enabled = true;
       cap[2].isTrigger = true;
