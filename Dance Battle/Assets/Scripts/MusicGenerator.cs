@@ -16,7 +16,7 @@ public class MusicGenerator : MonoBehaviour {
     // Use this for initialization
     void Start() {
         song = GetComponent<AudioSource>();
-        StartCoroutine(spawnCircles());
+        //StartCoroutine(spawnCircles());
 
     }
 
@@ -28,7 +28,7 @@ public class MusicGenerator : MonoBehaviour {
         {
             timeStampsOfBeats.Add(song.time);
         }
-        if(Time.time > 200 && checkWrite == false)
+        if(Time.time > song.clip.length && checkWrite == false)
         {
             saveToFile();
         }
@@ -65,26 +65,26 @@ public class MusicGenerator : MonoBehaviour {
         float[] timeStampArray = timeStampsOfBeats.ToArray();
         foreach (float timeStamp in timeStampArray)
         {
-            System.IO.File.AppendAllText(Application.dataPath + "/test.txt", Convert.ToString(timeStamp) + Environment.NewLine);
+            System.IO.File.AppendAllText(Application.dataPath + "/brainPower.txt", Convert.ToString(timeStamp) + Environment.NewLine);
             
         }
         checkWrite = true;
     }
 
-    IEnumerator spawnCircles()
-    {
-        Boolean songTimeOut = false;
-        while (!songTimeOut)
-        {
-            if (Time.time >= 90)
-            {
-                songTimeOut = true;
-            }
-            else
-            {
-                yield return new WaitForSeconds(.666666666f);
-                Instantiate(circle, new Vector3(-5.78f, 1f, 0), Quaternion.identity);
-            }
-        }
-    }
+    //IEnumerator spawnCircles()
+    //{
+    //    Boolean songTimeOut = false;
+    //    while (!songTimeOut)
+    //    {
+    //        if (Time.time >= 90)
+    //        {
+    //            songTimeOut = true;
+    //        }
+    //        else
+    //        {
+    //            yield return new WaitForSeconds(.666666666f);
+    //            Instantiate(circle, new Vector3(-5.78f, 1f, 0), Quaternion.identity);
+    //        }
+    //    }
+    //}
 }
