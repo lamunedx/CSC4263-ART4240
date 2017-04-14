@@ -11,13 +11,13 @@ public class MoveTargets : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Time.time-spawnTime >= .666666f)
+		if(Time.time-spawnTime >= 2.0f)
         {
             Destroy(gameObject);
         }
         else
         {
-            gameObject.transform.position += new Vector3(0.05f, 0f, 0f);
+            gameObject.transform.position += new Vector3(0.075f, 0f, 0f);
         }
 	}
 }

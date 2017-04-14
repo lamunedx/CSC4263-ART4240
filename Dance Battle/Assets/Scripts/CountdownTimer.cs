@@ -10,10 +10,12 @@ public class CountdownTimer : MonoBehaviour {
     public Text countdownText;
     private int textSize;
     private bool reSize;
+    AudioSource song;
 
     // Use this for initialization
     void Start()
     {
+        song = GetComponent<AudioSource>();
         StartCoroutine("LoseTime");
         textSize = countdownText.fontSize;
         reSize = false;
@@ -31,7 +33,10 @@ public class CountdownTimer : MonoBehaviour {
                 countdownText.fontSize = textSize;
                 reSize = false;
             }
-
+            if (timeLeft == 1)
+            {
+                song.Play();
+            }
             if (timeLeft == 0)
             {
                 countdownText.text = "FIGHT";

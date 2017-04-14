@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class MusicGenerator : MonoBehaviour {
     AudioSource song;
-    public GameObject circle;
 
     public float[] samples = new float[512];
     public float[] frequencyRange = new float[8];
@@ -24,7 +23,7 @@ public class MusicGenerator : MonoBehaviour {
     void Update() {
         getSpectrumAudioSource();
         getfrequencyrange();
-        if(frequencyRange[0] > 25)
+        if(frequencyRange[0] > 50)
         {
             timeStampsOfBeats.Add(song.time);
         }
@@ -36,7 +35,7 @@ public class MusicGenerator : MonoBehaviour {
 
     void getSpectrumAudioSource()
     {
-        song.GetSpectrumData(samples, 0, FFTWindow.Blackman);
+        song.GetSpectrumData(samples, 0, FFTWindow.BlackmanHarris);
     }
 
     void getfrequencyrange()
@@ -65,26 +64,10 @@ public class MusicGenerator : MonoBehaviour {
         float[] timeStampArray = timeStampsOfBeats.ToArray();
         foreach (float timeStamp in timeStampArray)
         {
-            System.IO.File.AppendAllText(Application.dataPath + "/brainPower.txt", Convert.ToString(timeStamp) + Environment.NewLine);
+            System.IO.File.AppendAllText(Application.dataPath + "/brainPower5.txt", Convert.ToString(timeStamp) + Environment.NewLine);
             
         }
         checkWrite = true;
     }
 
-    //IEnumerator spawnCircles()
-    //{
-    //    Boolean songTimeOut = false;
-    //    while (!songTimeOut)
-    //    {
-    //        if (Time.time >= 90)
-    //        {
-    //            songTimeOut = true;
-    //        }
-    //        else
-    //        {
-    //            yield return new WaitForSeconds(.666666666f);
-    //            Instantiate(circle, new Vector3(-5.78f, 1f, 0), Quaternion.identity);
-    //        }
-    //    }
-    //}
 }
