@@ -702,16 +702,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 82566342377854090, guid: 376a12adde7119b42a0ab5db010e5ae2,
+    - target: {fileID: 114639977591259794, guid: 376a12adde7119b42a0ab5db010e5ae2,
         type: 2}
-      propertyPath: m_audioClip
+      propertyPath: countdownText
       value: 
-      objectReference: {fileID: 8300000, guid: df3dcec67b905d8488914d226bab232b, type: 3}
-    - target: {fileID: 82566342377854090, guid: 376a12adde7119b42a0ab5db010e5ae2,
-        type: 2}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 568172141}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 376a12adde7119b42a0ab5db010e5ae2, type: 2}
   m_IsPrefabParent: 0
@@ -1055,24 +1050,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1291841640}
---- !u!1 &1505816271 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1195309904142212, guid: 376a12adde7119b42a0ab5db010e5ae2,
-    type: 2}
-  m_PrefabInternal: {fileID: 577980117}
---- !u!114 &1505816275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1505816271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cd6cb22ad21327419298066a18fe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeLeft: 3
-  countdownText: {fileID: 568172141}
 --- !u!1 &1676076527
 GameObject:
   m_ObjectHideFlags: 0
