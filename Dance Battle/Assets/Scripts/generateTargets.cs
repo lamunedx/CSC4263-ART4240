@@ -29,19 +29,17 @@ public class generateTargets : MonoBehaviour {
     IEnumerator spawnCircles()
     {
         bool songTimeOut = false;
-        int i = 0;
         while (!songTimeOut)
         {
-            if (Time.time >= 140)
+            if (Time.time >= 120)
             {
                 songTimeOut = true;
             }
             else
             {
-                yield return new WaitForSeconds(waitTime[i]);
-                Instantiate(circle, new Vector3(-5.78f, 1f, 0), Quaternion.identity);
+                yield return new WaitForSeconds(.6521739130434f);
+                Instantiate(circle, new Vector3(-9f, 1f, 0), Quaternion.identity);
             }
-            i++;
         }
     }
 }

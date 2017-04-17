@@ -17,7 +17,7 @@ public class MoveTargets : MonoBehaviour {
         }
         else
         {
-            gameObject.transform.position += new Vector3(0.075f, 0f, 0f);
+            gameObject.transform.position += new Vector3(0.06f, 0f, 0f);
         }
 	}
 }
