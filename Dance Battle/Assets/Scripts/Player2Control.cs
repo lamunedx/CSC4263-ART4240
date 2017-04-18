@@ -33,18 +33,18 @@ public class Player2Control : MonoBehaviour {
       anime.SetBool("moving", false);
     }
 
-	  if (Input.GetKey(KeyCode.DownArrow) && anime.GetBool("onGround")) {
+	if (Input.GetKey(KeyCode.DownArrow) && anime.GetBool("onGround")) {
       //cap[0].enabled = false;
       //cap[1].enabled = true;
       //GetComponentInChildren<EdgeCollider2D>().enabled = false;
-      //transform.position = new Vector2(transform.localPosition.x, -3.24f);
-	    anime.SetBool("crouching", true);
+      transform.position = new Vector2(transform.localPosition.x, -3.24f);
+	  anime.SetBool("crouching", true);
     }
     if (Input.GetKeyUp(KeyCode.DownArrow)) {
-      cap[1].enabled = false;
-      cap[0].enabled = true;
+      //cap[1].enabled = false;
+      //cap[0].enabled = true;
       //GetComponentInChildren<EdgeCollider2D>().enabled = true;
-      transform.position = new Vector2(transform.localPosition.x, -2.96f);
+      //transform.position = new Vector2(transform.localPosition.x, -2.96f);
 	    anime.SetBool("crouching", false);
     }
 

@@ -23,51 +23,57 @@ public class Player1Control : MonoBehaviour {
 
   void Update() {
     // movement keys -----------------------------------------------------------
-		if (Input.GetKey(KeyCode.D) && !anime.GetBool("Crouch")) {
+	if (Input.GetKey(KeyCode.D) && !anime.GetBool("crouching")) {
       transform.Translate(Vector2.right * 2f * Time.deltaTime);
-      anime.SetBool("Speed", true);
+      anime.SetBool("moving", true);
     }
     if (Input.GetKeyUp(KeyCode.D)) {
-      anime.SetBool("Speed", false);
+      anime.SetBool("moving", false);
     }
 
-		if (Input.GetKey(KeyCode.A) && !anime.GetBool("Crouch")) {
+		if (Input.GetKey(KeyCode.A) && !anime.GetBool("crouching")) {
       transform.Translate(Vector2.left * 2f * Time.deltaTime);
-      anime.SetBool("Speed", true);
+      anime.SetBool("moving", true);
     }
     if (Input.GetKeyUp(KeyCode.A)) {
-      anime.SetBool("Speed", false);
+      anime.SetBool("moving", false);
     }
 
-    if (Input.GetKey(KeyCode.S) && anime.GetBool("Ground")) {
-      cap[0].enabled = false;
-      cap[1].enabled = true;
+    if (Input.GetKey(KeyCode.S) && anime.GetBool("onGround")) {
+      //cap[0].enabled = false;
+      //cap[1].enabled = true;
       //GetComponentInChildren<EdgeCollider2D>().enabled = false;
       transform.position = new Vector2(transform.localPosition.x, -3.24f);
-      anime.SetBool("Crouch", true);
+      anime.SetBool("crouching", true);
     }
     if (Input.GetKeyUp(KeyCode.S)) {
-      cap[1].enabled = false;
-      cap[0].enabled = true;
+      //cap[1].enabled = false;
+      //cap[0].enabled = true;
       //GetComponentInChildren<EdgeCollider2D>().enabled = true;
-      transform.position = new Vector2(transform.localPosition.x, -2.96f);
-      anime.SetBool("Crouch", false);
+      //transform.position = new Vector2(transform.localPosition.x, -2.96f);
+      anime.SetBool("crouching", false);
     }
 
-    if (Input.GetKeyDown(KeyCode.W) && anime.GetBool("Ground")) {
+    if (Input.GetKeyDown(KeyCode.W) && anime.GetBool("onGround")) {
 			rigid.AddForce(Vector2.up * 550f);
 		}
 
     // action keys -------------------------------------------------------------
     if (Input.GetKeyDown(KeyCode.Z)) {
-      anime.SetBool("Punch", true);
-      cap[2].enabled = true;
-      cap[2].isTrigger = true;
+      anime.SetBool("punching", true);
+      //cap[2].enabled = true;
+      //cap[2].isTrigger = true;
     }
-    if (anime.GetCurrentAnimatorStateInfo(0).IsName("Punch")) {
-      anime.SetBool("Punch", false);
-      cap[2].enabled = false;
+    if (anime.GetCurrentAnimatorStateInfo(0).IsName("punch")) {
+      anime.SetBool("punching", false);
+      //cap[2].enabled = false;
     }
+	if (Input.GetKeyDown(KeyCode.X) && !anime.GetBool("moving")) {
+	  anime.SetBool("kicking", true);
+	}
+	if (anime.GetCurrentAnimatorStateInfo(0).IsName("kick")) {
+	  anime.SetBool("kicking", false);
+	}
 
     // make sure the player is facing the right direction
     // note: this handles both players, so don't add this to the player 1 script
@@ -83,15 +89,15 @@ public class Player1Control : MonoBehaviour {
 
   private void OnCollisionEnter2D(Collision2D collision) {
     if (collision.gameObject.name == "Platform") {
-      anime.SetBool("Ground", true);
-      anime.SetBool("Jump", false);
+      anime.SetBool("onGround", true);
+      anime.SetBool("jumping", false);
     }
   }
 
   private void OnCollisionExit2D(Collision2D collision) {
     if (collision.gameObject.name == "Platform") {
-      anime.SetBool("Ground", false);
-      anime.SetBool("Jump", true);
+      anime.SetBool("onGround", false);
+      anime.SetBool("jumping", true);
     }
   }
 }
