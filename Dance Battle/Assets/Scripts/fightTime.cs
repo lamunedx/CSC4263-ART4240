@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class fightTime : MonoBehaviour
 {
     private int timeLeft;
-    public Text text;
+    public Text timer;
+    public Text fightover;
 
     // Use this for initialization
     void Start()
     {
         timeLeft = 90;
-        text.text = "" + timeLeft;
+        timer.text = "" + timeLeft;
         StartCoroutine(updateTime());
     }
 
@@ -23,11 +24,13 @@ public class fightTime : MonoBehaviour
     }
     IEnumerator updateTime()
     {
-        while (true)
+        bool greaterThanZero = true;
+        while (greaterThanZero)
         {
-            if (timeLeft < 0)
+            if (timeLeft <= 0)
             {
-                StopCoroutine(updateTime());
+                fightover.text = "FIGHT OVER";
+                greaterThanZero = false;
             }
             else
             {

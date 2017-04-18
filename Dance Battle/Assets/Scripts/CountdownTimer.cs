@@ -8,7 +8,7 @@ public class CountdownTimer : MonoBehaviour {
     // Use this for initialization
     public int timeLeft = 5;
     public Text countdownText;
-    public GameObject matchtime;
+    public GameObject matchTime;
     private int textSize;
     private bool reSize;
     AudioSource song;
@@ -42,7 +42,7 @@ public class CountdownTimer : MonoBehaviour {
             if (timeLeft == 0)
             {
                 countdownText.text = "FIGHT";
-                matchtime.GetComponent<fightTime>().enabled = true;
+                matchTime.GetComponent<fightTime>().enabled = true;
             }
         }
         else if(timeLeft < 0)

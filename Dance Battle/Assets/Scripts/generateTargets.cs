@@ -31,7 +31,7 @@ public class generateTargets : MonoBehaviour {
         bool songTimeOut = false;
         while (!songTimeOut)
         {
-            if (Time.time >= 120)
+            if (Time.time >= 90)
             {
                 songTimeOut = true;
             }
