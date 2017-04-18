@@ -160,6 +160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 114182088633049740}
   fightover: {fileID: 114372190857348146}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!114 &114372190857348146
 MonoBehaviour:
   m_ObjectHideFlags: 1

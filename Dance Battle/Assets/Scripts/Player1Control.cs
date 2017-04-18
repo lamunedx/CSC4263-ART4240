@@ -43,7 +43,7 @@ public class Player1Control : MonoBehaviour {
       //cap[0].enabled = false;
       //cap[1].enabled = true;
       //GetComponentInChildren<EdgeCollider2D>().enabled = false;
-      transform.position = new Vector2(transform.localPosition.x, -3.24f);
+      //transform.position = new Vector2(transform.localPosition.x, -3.24f);
       anime.SetBool("crouching", true);
     }
     if (Input.GetKeyUp(KeyCode.S)) {
@@ -78,12 +78,12 @@ public class Player1Control : MonoBehaviour {
     // make sure the player is facing the right direction
     // note: this handles both players, so don't add this to the player 1 script
     if (rigid.position.x > otherRigid.position.x) {
-      rigid.transform.localScale = new Vector2(1f, rigid.transform.localScale.y);
-      otherRigid.transform.localScale = new Vector2(-1f, otherRigid.transform.localScale.y);
+      rigid.transform.localScale = new Vector2(1.5f, rigid.transform.localScale.y);
+      otherRigid.transform.localScale = new Vector2(-1.5f, otherRigid.transform.localScale.y);
     }
     else {
-      rigid.transform.localScale = new Vector2(-1f, rigid.transform.localScale.y);
-      otherRigid.transform.localScale = new Vector2(1f, otherRigid.transform.localScale.y);
+      rigid.transform.localScale = new Vector2(-1.5f, rigid.transform.localScale.y);
+      otherRigid.transform.localScale = new Vector2(1.5f, otherRigid.transform.localScale.y);
     }
   }
 
@@ -93,8 +93,16 @@ public class Player1Control : MonoBehaviour {
       anime.SetBool("jumping", false);
     }
   }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Platform")
+        {
+            anime.SetBool("onGround", true);
+            anime.SetBool("jumping", false);
+        }
+    }
 
-  private void OnCollisionExit2D(Collision2D collision) {
+    private void OnCollisionExit2D(Collision2D collision) {
     if (collision.gameObject.name == "Platform") {
       anime.SetBool("onGround", false);
       anime.SetBool("jumping", true);

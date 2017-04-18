@@ -8,6 +8,8 @@ public class fightTime : MonoBehaviour
     private int timeLeft;
     public Text timer;
     public Text fightover;
+    public GameObject player1;
+    public GameObject player2;
 
     // Use this for initialization
     void Start()
@@ -31,6 +33,8 @@ public class fightTime : MonoBehaviour
             {
                 fightover.text = "FIGHT OVER";
                 greaterThanZero = false;
+                player1.GetComponent<Player1Control>().enabled = true;
+                player2.GetComponent<Player2Control>().enabled = true;
             }
             else
             {

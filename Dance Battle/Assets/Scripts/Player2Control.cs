@@ -37,7 +37,7 @@ public class Player2Control : MonoBehaviour {
       //cap[0].enabled = false;
       //cap[1].enabled = true;
       //GetComponentInChildren<EdgeCollider2D>().enabled = false;
-      transform.position = new Vector2(transform.localPosition.x, -3.24f);
+      //transform.position = new Vector2(transform.localPosition.x, -3.24f);
 	  anime.SetBool("crouching", true);
     }
     if (Input.GetKeyUp(KeyCode.DownArrow)) {
@@ -79,8 +79,20 @@ public class Player2Control : MonoBehaviour {
       anime.SetBool("jumping", false);
     }
   }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Platform")
+        {
+            anime.SetBool("onGround", true);
+            anime.SetBool("jumping", false);
+        }
+        if (collision.gameObject.name == "Player2")
+        {
+            anime.SetBool("jumping", false);
+        }
+    }
 
-  private void OnCollisionExit2D(Collision2D collision) {
+    private void OnCollisionExit2D(Collision2D collision) {
     if (collision.gameObject.name == "Platform") {
 	  anime.SetBool("onGround", false);
       anime.SetBool("jumping", true);
