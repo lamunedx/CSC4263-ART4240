@@ -10,15 +10,15 @@ public class Player2Control : MonoBehaviour {
   private CapsuleCollider2D[] cap;
 
 	void Start () {
-    anime = GetComponent<Animator>();
-    rigid = GetComponent<Rigidbody2D>();
-    cap = GetComponents<CapsuleCollider2D>();
+    anime = gameObject.GetComponent<Animator>();
+    rigid = gameObject.GetComponent<Rigidbody2D>();
+    cap = gameObject.GetComponents<CapsuleCollider2D>();
 	}
 
 	void Update () {
     // movement keys -----------------------------------------------------------
     if (Input.GetKey(KeyCode.RightArrow) && !anime.GetBool("crouching")) {
-      transform.Translate(Vector2.right * 2f * Time.deltaTime);
+      transform.Translate(Vector2.right * 3f * Time.deltaTime);
       anime.SetBool("moving", true);
     }
     if (Input.GetKeyUp(KeyCode.RightArrow)) {
@@ -26,7 +26,7 @@ public class Player2Control : MonoBehaviour {
     }
 
 	  if (Input.GetKey(KeyCode.LeftArrow) && !anime.GetBool("crouching")) {
-      transform.Translate(Vector2.left * 2f * Time.deltaTime);
+      transform.Translate(Vector2.left * 3f * Time.deltaTime);
       anime.SetBool("moving", true);
     }
     if (Input.GetKeyUp(KeyCode.LeftArrow)) {
@@ -49,25 +49,28 @@ public class Player2Control : MonoBehaviour {
     }
 
 	  if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("onGround")) {
-      rigid.AddForce(Vector2.up * 550f);
+      rigid.AddForce(Vector2.up * 575f);
     }
 
     // action keys -------------------------------------------------------------
 	  if (Input.GetKeyDown(KeyCode.I) && !anime.GetBool("moving")) {
-      anime.SetBool("punching", true);
-      //cap[2].enabled = true;
-      //cap[2].isTrigger = true;
-    }
+        anime.SetBool("punching", true);
+        cap[3].enabled = true;
+        cap[3].isTrigger = true;
+        }
 	  if (anime.GetCurrentAnimatorStateInfo(0).IsName("punch")) {
-      anime.SetBool("punching", false);
-      //cap[2].enabled = false;
+        anime.SetBool("punching", false);
+        cap[3].enabled = false;
     }
 	  if (Input.GetKeyDown(KeyCode.O) && !anime.GetBool("moving")) {
 	    anime.SetBool("kicking", true);
-	  }
+        cap[2].enabled = true;
+        cap[2].isTrigger = true;
+    }
 	  if (anime.GetCurrentAnimatorStateInfo(0).IsName("kick")) {
 	    anime.SetBool("kicking", false);
-	  }
+        cap[2].enabled = false;
+        }
   }
 
   private void OnCollisionEnter2D(Collision2D collision) {

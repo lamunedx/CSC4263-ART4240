@@ -14,9 +14,9 @@ public class Player1Control : MonoBehaviour {
   private Rigidbody2D otherRigid;
 
   void Start() {
-    anime = GetComponent<Animator>();
-    rigid = GetComponent<Rigidbody2D>();
-		cap = GetComponents<CapsuleCollider2D>();
+    anime = gameObject.GetComponent<Animator>();
+    rigid = gameObject.GetComponent<Rigidbody2D>();
+		cap = gameObject.GetComponents<CapsuleCollider2D>();
 
     otherRigid = otherPlayer.GetComponent<Rigidbody2D>();
   }
@@ -24,7 +24,7 @@ public class Player1Control : MonoBehaviour {
   void Update() {
     // movement keys -----------------------------------------------------------
 	if (Input.GetKey(KeyCode.D) && !anime.GetBool("crouching")) {
-      transform.Translate(Vector2.right * 2f * Time.deltaTime);
+      transform.Translate(Vector2.right * 3f * Time.deltaTime);
       anime.SetBool("moving", true);
     }
     if (Input.GetKeyUp(KeyCode.D)) {
@@ -32,7 +32,7 @@ public class Player1Control : MonoBehaviour {
     }
 
 		if (Input.GetKey(KeyCode.A) && !anime.GetBool("crouching")) {
-      transform.Translate(Vector2.left * 2f * Time.deltaTime);
+      transform.Translate(Vector2.left * 3f * Time.deltaTime);
       anime.SetBool("moving", true);
     }
     if (Input.GetKeyUp(KeyCode.A)) {
@@ -55,7 +55,7 @@ public class Player1Control : MonoBehaviour {
     }
 
     if (Input.GetKeyDown(KeyCode.W) && anime.GetBool("onGround")) {
-			rigid.AddForce(Vector2.up * 550f);
+			rigid.AddForce(Vector2.up * 575f);
 		}
 
     // action keys -------------------------------------------------------------

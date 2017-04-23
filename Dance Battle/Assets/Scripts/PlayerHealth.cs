@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour {
 
 	protected void decreaseHealth() {
 		playerHealth -= damage;
-		float calc_Health = playerHealth / 100f;
+		float calc_Health = playerHealth / 50f;
 		setHealthBar (calc_Health);
 
 	}
@@ -21,12 +21,15 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
   private void OnTriggerEnter2D(Collider2D other) {
-    if (other.gameObject.tag == "player1") {
-      decreaseHealth();
-    }
+        if (other.gameObject.tag == "player2")
+        {
+            decreaseHealth();
+        }
 
-    if (other.gameObject.tag == "player2") {
-      decreaseHealth();
+        else if (other.gameObject.tag == "player1")
+        {
+            decreaseHealth();
+        }
+        
     }
-  }
 }

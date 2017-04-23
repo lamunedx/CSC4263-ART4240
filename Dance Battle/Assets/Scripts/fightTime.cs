@@ -33,8 +33,8 @@ public class fightTime : MonoBehaviour
             {
                 fightover.text = "FIGHT OVER";
                 greaterThanZero = false;
-                player1.GetComponent<Player1Control>().enabled = true;
-                player2.GetComponent<Player2Control>().enabled = true;
+                player1.GetComponent<Player1Control>().enabled = false;
+                player2.GetComponent<Player2Control>().enabled = false;
             }
             else
             {
