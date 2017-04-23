@@ -6,6 +6,16 @@ TagManager:
   tags:
   - Ground
   - Hit
+  - p2Health
+  - p1Health
+  - player1
+  - player2
+  - P1punch1
+  - P1punch2
+  - P1kick
+  - P2punch1
+  - P2punch2
+  - P2kick
   layers:
   - Default
   - TransparentFX
