@@ -56,8 +56,13 @@ public class CharacterSelection : MonoBehaviour {
         characterList[index].SetActive(true);
     }
 
-    public void Play()
+    public void SelectPlayer1()
+    {
+        SceneManager.LoadScene("Player2Selection");
+    }
+    public void SelectPlayer2Play()
     {
         SceneManager.LoadScene("Game");
     }
+
 }
