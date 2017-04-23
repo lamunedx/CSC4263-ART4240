@@ -10,6 +10,6 @@ public class ButtonManager : MonoBehaviour {
   }
   public void SelectCharacter()
     {
-        SceneManager.LoadScene("CharacterSelection");
+        SceneManager.LoadScene("Player1Selection");
     } 
 }
