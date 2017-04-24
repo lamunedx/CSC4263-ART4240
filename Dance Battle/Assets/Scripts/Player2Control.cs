@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // player 2's control script
 public class Player2Control : MonoBehaviour
@@ -10,6 +11,7 @@ public class Player2Control : MonoBehaviour
     private Rigidbody2D rigid;
     public float playerHealth = 100f;
     protected float damage = 5f;
+    public Slider healthSlider;
 
     // reference to the other player
     public GameObject otherPlayer;
@@ -24,6 +26,8 @@ public class Player2Control : MonoBehaviour
     private CapsuleCollider2D kickCol;
     private float attackTime;
 
+    private CapsuleCollider2D[] capColliders;
+
     void Start()
     {
         anime = gameObject.GetComponent<Animator>();
@@ -32,6 +36,8 @@ public class Player2Control : MonoBehaviour
         punch1Col = punch1.GetComponent<CircleCollider2D>();
         kickCol = kick.GetComponent<CapsuleCollider2D>();
         attackTime = Time.time;
+
+        capColliders = gameObject.GetComponents<CapsuleCollider2D>();
     }
 
     void Update()
@@ -64,6 +70,8 @@ public class Player2Control : MonoBehaviour
             //GetComponentInChildren<EdgeCollider2D>().enabled = false;
             //transform.position = new Vector2(transform.localPosition.x, -3.24f);
             anime.SetBool("crouching", true);
+            capColliders[0].offset = new Vector2(capColliders[0].offset.x, -1f);
+            capColliders[2].offset = new Vector2(capColliders[2].offset.x, 0f);
         }
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
@@ -72,6 +80,8 @@ public class Player2Control : MonoBehaviour
             //GetComponentInChildren<EdgeCollider2D>().enabled = true;
             //transform.position = new Vector2(transform.localPosition.x, -2.96f);
             anime.SetBool("crouching", false);
+            capColliders[0].offset = new Vector2(capColliders[0].offset.x, .17f);
+            capColliders[2].offset = new Vector2(capColliders[2].offset.x, 1.02f);
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("onGround"))
@@ -80,14 +90,14 @@ public class Player2Control : MonoBehaviour
         }
 
         // action keys -------------------------------------------------------------
-        if (Input.GetKeyDown(KeyCode.I) && !anime.GetBool("moving") && Time.time > attackTime + .6)
+        if (Input.GetKeyDown(KeyCode.I) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
         {
             anime.SetBool("punching", true);
             punch1Col.enabled = true;
             Debug.Log("punch");
             attackTime = Time.time;
         }
-        if (Input.GetKey(KeyCode.I) && !anime.GetBool("moving") && Time.time > attackTime + .6)
+        if (Input.GetKey(KeyCode.I) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
         {
             anime.SetBool("punching", false);
             punch1Col.enabled = false;
@@ -99,13 +109,13 @@ public class Player2Control : MonoBehaviour
             punch1Col.enabled = false;
             Debug.Log("punchStop");
         }
-        if (Input.GetKeyDown(KeyCode.O) && !anime.GetBool("moving") && Time.time > attackTime + .6)
+        if (Input.GetKeyDown(KeyCode.O) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
         {
             anime.SetBool("kicking", true);
             kickCol.enabled = true;
             attackTime = Time.time;
         }
-        if (Input.GetKey(KeyCode.O) && !anime.GetBool("moving") && Time.time > attackTime + .6)
+        if (Input.GetKey(KeyCode.O) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
         {
             anime.SetBool("kicking", false);
             kickCol.enabled = false;
@@ -115,6 +125,12 @@ public class Player2Control : MonoBehaviour
         {
             anime.SetBool("kicking", false);
             kickCol.enabled = false;
+        }
+        if(playerHealth <= 0)
+        {
+            anime.SetBool("crouching", true);
+            this.GetComponent<Player2Control>().enabled = false;
+            otherPlayer.GetComponent<Player1Control>().enabled = false;
         }
     }
 
@@ -153,22 +169,27 @@ public class Player2Control : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        
         if (collider.gameObject.tag == "P1punch1")
         {
             playerHealth -= 5;
+            healthSlider.value = playerHealth;
             Debug.Log("player 1 punched me");
         }
         if (collider.gameObject.tag == "P1punch2")
         {
             playerHealth -= 7;
+            healthSlider.value = playerHealth;
         }
         if (collider.gameObject.tag == "P1kick")
         {
             playerHealth -= 10;
+            healthSlider.value = playerHealth;
         }
         if (collider.gameObject.tag == "P1throwChicken")
         {
             playerHealth -= 2;
+            healthSlider.value = playerHealth;
         }
     }
 
