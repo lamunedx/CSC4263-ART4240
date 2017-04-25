@@ -33,6 +33,8 @@ public class Player1Control : MonoBehaviour
 
     private int combo;
 
+    private bool grounded;
+
 
     void Awake()
     {
@@ -46,6 +48,7 @@ public class Player1Control : MonoBehaviour
         capColliders = gameObject.GetComponents<CapsuleCollider2D>();
 
         combo = 0;
+        grounded = true;
     }
 
     void Update()
@@ -108,41 +111,63 @@ public class Player1Control : MonoBehaviour
         
         // action keys -------------------------------------------------------------
         //PUNCH 1
-        if (Input.GetKeyDown(KeyCode.Z) && !anime.GetBool("moving") && Time.time > attackTime + .1 && anime.GetBool("onGround"))
+        if (Input.GetKeyDown(KeyCode.Z) && !anime.GetBool("moving") && Time.time > attackTime + .2 && anime.GetBool("onGround"))
         {
             if (combo == 0)
             {
                 anime.SetBool("punching", true);
                 punch1.transform.Translate(new Vector3(-3.04f, 0, 0));
                 combo++;
+                Debug.Log(combo);
             }
-            else if(combo == 1 && Time.time< attackTime + .15)
+            else if(combo == 1 && Time.time > attackTime + .6  && Time.time < attackTime + .8)
             {
-                anime.SetBool("punching", false);
                 anime.SetBool("punch2", true);
                 punch2.transform.Translate(new Vector3(-2.33f, 0, 0));
                 combo++;
+                Debug.Log(combo);
             }
-            else if(combo == 2 && Time.time < attackTime + .15)
+            else if(combo == 2 && Time.time < attackTime + .7)
             {
-                anime.SetBool("punch2", false);
-                anime.SetBool("punch3", true);
-                punch2.transform.Translate(new Vector3(-2.33f, 0, 0));
+                anime.SetBool("uppercut", true);
+                //punch2.transform.Translate(new Vector3(-2.33f, 0, 0));
+                combo = 0;
+                Debug.Log(combo);
+            }
+            else
+            {
                 combo = 0;
             }
                 Debug.Log("punch");
             attackTime = Time.time;
         }
-        if (Input.GetKey(KeyCode.Z) && !anime.GetBool("moving") && Time.time > attackTime + .1 && anime.GetBool("onGround"))
+        if (Input.GetKey(KeyCode.Z) && !anime.GetBool("moving") && Time.time > attackTime + .3 && anime.GetBool("onGround"))
         {
-            anime.SetBool("punching", false);
+            if (combo == 0)
+            {
+                anime.SetBool("punching", false);
+            }
+            else if (combo == 1)
+            {
+                anime.SetBool("punch2", false);
+            }
+            else if (combo == 2)
+            {
+                anime.SetBool("uppercut", false);
+            }
 
         }
-        if (Input.GetKeyUp(KeyCode.Z))
-        {
-            anime.SetBool("punching", false);
+        if (Input.GetKeyUp(KeyCode.Z) && (anime.GetBool("punching") || anime.GetBool("punch2") || anime.GetBool("uppercut"))) {
+        
+                anime.SetBool("punching", false);
+
+                anime.SetBool("punch2", false);
+
+                anime.SetBool("uppercut", false);
+
+
             punch1.transform.Translate(new Vector3(3.04f, 0, 0));
-            Debug.Log("punchStop");
+            
         }//PUNCH 2
         //if (Input.GetKeyDown(KeyCode.Z) && !anime.GetBool("moving") && Time.time > attackTime + .05 && anime.GetBool("onGround") && !anime.GetBool("punching"))
         //{
@@ -215,6 +240,7 @@ public class Player1Control : MonoBehaviour
         {
             anime.SetBool("onGround", true);
             anime.SetBool("jumping", false);
+            grounded = true;
         }
     }
     private void OnCollisionStay2D(Collision2D collision)
@@ -223,6 +249,7 @@ public class Player1Control : MonoBehaviour
         {
             anime.SetBool("onGround", true);
             anime.SetBool("jumping", false);
+            grounded = true;
         }
     }
 
@@ -232,6 +259,7 @@ public class Player1Control : MonoBehaviour
         {
             anime.SetBool("onGround", false);
             anime.SetBool("jumping", true);
+            grounded = false;
         }
     }
 
