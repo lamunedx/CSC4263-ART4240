@@ -28,7 +28,11 @@ public class Player2Control : MonoBehaviour
 
     private CapsuleCollider2D[] capColliders;
 
-    void Start()
+    public GameObject gameController;
+
+    public Text fightOver;
+
+    void Awake()
     {
         anime = gameObject.GetComponent<Animator>();
         rigid = gameObject.GetComponent<Rigidbody2D>();
@@ -93,44 +97,55 @@ public class Player2Control : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
         {
             anime.SetBool("punching", true);
-            punch1Col.enabled = true;
+            punch1.transform.Translate(new Vector3(-3.04f, 0, 0));
             Debug.Log("punch");
             attackTime = Time.time;
         }
-        if (Input.GetKey(KeyCode.I) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
-        {
-            anime.SetBool("punching", false);
-            punch1Col.enabled = false;
+        //if (Input.GetKey(KeyCode.I) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
+        //{
+        //    anime.SetBool("punching", false);
+        //    punch1Col.enabled = false;
 
-        }
+        //}
         if (Input.GetKeyUp(KeyCode.I) && anime.GetBool("punching"))
         {
             anime.SetBool("punching", false);
-            punch1Col.enabled = false;
+            punch1.transform.Translate(new Vector3(3.04f, 0, 0));
             Debug.Log("punchStop");
         }
         if (Input.GetKeyDown(KeyCode.O) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
         {
             anime.SetBool("kicking", true);
-            kickCol.enabled = true;
+            //kickCol.enabled = true;
+            kick.transform.Translate(new Vector3(-2.06f, 0, 0));
             attackTime = Time.time;
         }
-        if (Input.GetKey(KeyCode.O) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
-        {
-            anime.SetBool("kicking", false);
-            kickCol.enabled = false;
+        //if (Input.GetKey(KeyCode.O) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
+        //{
+        //    anime.SetBool("kicking", false);
+        //    kick.transform.Translate(new Vector3(1.03f, 0, 0));
+        //    //kickCol.enabled = false;
 
-        }
+        //}
         if (Input.GetKeyUp(KeyCode.O) && anime.GetBool("kicking"))
         {
             anime.SetBool("kicking", false);
-            kickCol.enabled = false;
+            kick.transform.Translate(new Vector3(2.06f, 0, 0));
+            //kickCol.enabled = false;
         }
         if(playerHealth <= 0)
         {
             anime.SetBool("crouching", true);
-            this.GetComponent<Player2Control>().enabled = false;
+            otherPlayer.GetComponent<Animator>().SetBool("punching", false);
+            otherPlayer.GetComponent<Animator>().SetBool("kicking", false);
+            otherPlayer.GetComponent<Animator>().SetBool("moving", false);
+            gameController.GetComponent<fightTime>().enabled = false;
+            gameController.GetComponent<fightTime>().StopAllCoroutines();
+            fightOver.fontSize = 200;
+            fightOver.text = "PLAYER 1 WINS";
             otherPlayer.GetComponent<Player1Control>().enabled = false;
+            this.GetComponent<Player2Control>().enabled = false;
+            
         }
     }
 

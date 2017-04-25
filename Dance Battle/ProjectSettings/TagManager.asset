@@ -16,6 +16,7 @@ TagManager:
   - P2punch1
   - P2punch2
   - P2kick
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Background
   - 
   - 
   - 

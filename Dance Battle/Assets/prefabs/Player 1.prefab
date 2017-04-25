@@ -72,8 +72,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1928315057128940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.567239, y: -2.16, z: 0}
-  m_LocalScale: {x: -1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: -4.567239, y: -1.76, z: 0}
+  m_LocalScale: {x: -2, y: 2, z: 1}
   m_Children:
   - {fileID: 4666924016595640}
   - {fileID: 4517091248765386}
@@ -151,9 +151,9 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.39, y: 1.02}
-  m_Size: {x: 0.46, y: 0.0001}
-  m_Direction: 0
+  m_Offset: {x: 0.39, y: 1.08}
+  m_Size: {x: 0.95, y: 0.25}
+  m_Direction: 1
 --- !u!70 &70057425218885352
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -225,9 +225,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 100
+  healthSlider: {fileID: 0}
   otherPlayer: {fileID: 0}
   punch1: {fileID: 1459497309505870}
   kick: {fileID: 1123630119638306}
+  gameController: {fileID: 0}
+  fightOver: {fileID: 0}
 --- !u!212 &212318835196082358
 SpriteRenderer:
   m_ObjectHideFlags: 1
