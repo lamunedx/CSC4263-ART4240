@@ -52,22 +52,16 @@ public class Player2Control : MonoBehaviour
             transform.Translate(Vector2.right * 3f * Time.deltaTime);
             anime.SetBool("moving", true);
         }
-        if (Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            anime.SetBool("moving", false);
-        }
-
-        if (Input.GetKey(KeyCode.LeftArrow)  && !anime.GetBool("crouching"))
+       else if (Input.GetKey(KeyCode.LeftArrow) && !anime.GetBool("crouching"))
         {
             transform.Translate(Vector2.left * 3f * Time.deltaTime);
             anime.SetBool("moving", true);
         }
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        else if (Input.GetKeyUp(KeyCode.RightArrow))
         {
             anime.SetBool("moving", false);
         }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow) && anime.GetBool("onGround"))
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && anime.GetBool("onGround"))
         {
             anime.SetBool("moving", false);
             anime.SetBool("crouching", true);
@@ -77,11 +71,33 @@ public class Player2Control : MonoBehaviour
             punch1.transform.Translate(new Vector3(0, -2f, 0));
 
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow) && anime.GetBool("onGround"))
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("onGround"))
         {
-            anime.SetBool("crouching", true);
-
+            rigid.AddForce(Vector2.up * 575f);
         }
+
+
+        //if (Input.GetKey(KeyCode.LeftArrow)  && !anime.GetBool("crouching"))
+        //{
+        //    transform.Translate(Vector2.left * 3f * Time.deltaTime);
+        //    anime.SetBool("moving", true);
+        //}
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            anime.SetBool("moving", false);
+        }
+
+        //if (Input.GetKeyDown(KeyCode.DownArrow) && anime.GetBool("onGround"))
+        //{
+        //    anime.SetBool("moving", false);
+        //    anime.SetBool("crouching", true);
+        //    capColliders[0].offset = new Vector2(capColliders[0].offset.x, -1f);
+        //    capColliders[2].offset = new Vector2(capColliders[2].offset.x, 0f);
+        //    kick.transform.Translate(new Vector3(0, -2f, 0));
+        //    punch1.transform.Translate(new Vector3(0, -2f, 0));
+
+        //}
+
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             //cap[1].enabled = false;
@@ -109,12 +125,12 @@ public class Player2Control : MonoBehaviour
             Debug.Log("punch");
             attackTime = Time.time;
         }
-        //if (Input.GetKey(KeyCode.I) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
-        //{
-        //    anime.SetBool("punching", false);
-        //    punch1Col.enabled = false;
+        if (Input.GetKey(KeyCode.I) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
+        {
+            anime.SetBool("punching", false);
+            punch1Col.enabled = false;
 
-        //}
+        }
         if (Input.GetKeyUp(KeyCode.I) && anime.GetBool("punching"))
         {
             anime.SetBool("punching", false);
