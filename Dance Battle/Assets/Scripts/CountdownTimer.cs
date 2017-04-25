@@ -47,12 +47,14 @@ public class CountdownTimer : MonoBehaviour {
                 matchTime.GetComponent<fightTime>().enabled = true;
                 player1.GetComponent<Player1Control>().enabled = true;
                 player2.GetComponent<Player2Control>().enabled = true;
+                
             }
         }
         else if(timeLeft < 0)
         {
             countdownText.text = "";
             StopCoroutine("LoseTime");
+            this.GetComponent<CountdownTimer>().enabled = false;
         }
     }
 

@@ -85,8 +85,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1760645404277116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -2.3, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 2.5, y: -1.62, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4522025880479106}
   - {fileID: 4436394641123878}
@@ -165,9 +165,9 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.39, y: 1.02}
-  m_Size: {x: 0.46, y: 0.0001}
-  m_Direction: 0
+  m_Offset: {x: 0.39, y: 1.08}
+  m_Size: {x: 0.95, y: 0.25}
+  m_Direction: 1
 --- !u!70 &70820099341572060
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -225,9 +225,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 100
+  healthSlider: {fileID: 0}
   otherPlayer: {fileID: 0}
   punch1: {fileID: 1141086355022198}
   kick: {fileID: 1703290103803632}
+  gameController: {fileID: 0}
+  fightOver: {fileID: 0}
 --- !u!212 &212829701711119062
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -260,6 +263,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 97c74f1d946867e469c9cda86e9affbf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0

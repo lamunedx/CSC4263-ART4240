@@ -29,9 +29,12 @@ public class Player1Control : MonoBehaviour
 
     private CapsuleCollider2D[] capColliders;
 
+    public GameObject gameController;
+
+    public Text fightOver;
 
 
-    void Start()
+    void Awake()
     {
         anime = gameObject.GetComponent<Animator>();
         rigid = gameObject.GetComponent<Rigidbody2D>();
@@ -135,19 +138,27 @@ public class Player1Control : MonoBehaviour
         // note: this handles both players, so don't add this to the player 1 script
         if (rigid.position.x > otherRigid.position.x)
         {
-            rigid.transform.localScale = new Vector2(1.5f, rigid.transform.localScale.y);
-            otherRigid.transform.localScale = new Vector2(-1.5f, otherRigid.transform.localScale.y);
+            rigid.transform.localScale = new Vector2(2f, rigid.transform.localScale.y);
+            otherRigid.transform.localScale = new Vector2(-2f, otherRigid.transform.localScale.y);
         }
         else
         {
-            rigid.transform.localScale = new Vector2(-1.5f, rigid.transform.localScale.y);
-            otherRigid.transform.localScale = new Vector2(1.5f, otherRigid.transform.localScale.y);
+            rigid.transform.localScale = new Vector2(-2f, rigid.transform.localScale.y);
+            otherRigid.transform.localScale = new Vector2(2f, otherRigid.transform.localScale.y);
         }
         if (playerHealth <= 0)
         {
             anime.SetBool("crouching", true);
-            this.GetComponent<Player1Control>().enabled = false;
+            otherPlayer.GetComponent<Animator>().SetBool("punching", false);
+            otherPlayer.GetComponent<Animator>().SetBool("kicking", false);
+            otherPlayer.GetComponent<Animator>().SetBool("moving", false);
+            gameController.GetComponent<fightTime>().enabled = false;
+            gameController.GetComponent<fightTime>().StopAllCoroutines();
+            fightOver.fontSize = 200;
+            fightOver.text = "PLAYER 2 WINS";
             otherPlayer.GetComponent<Player2Control>().enabled = false;
+            this.GetComponent<Player1Control>().enabled = false;
+
         }
     }
 
