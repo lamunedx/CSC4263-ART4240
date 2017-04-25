@@ -349,6 +349,10 @@ Prefab:
       propertyPath: fightOver
       value: 
       objectReference: {fileID: 1086850056}
+    - target: {fileID: 1333872257342098, guid: be3f41738fb010443991caea56689d8a, type: 2}
+      propertyPath: m_TagString
+      value: P2punch2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be3f41738fb010443991caea56689d8a, type: 2}
   m_IsPrefabParent: 0
@@ -678,6 +682,10 @@ Prefab:
       propertyPath: fightOver
       value: 
       objectReference: {fileID: 1086850056}
+    - target: {fileID: 1932481422423710, guid: 64b595ab643c7bf4d913960d69022beb, type: 2}
+      propertyPath: m_TagString
+      value: P1punch2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64b595ab643c7bf4d913960d69022beb, type: 2}
   m_IsPrefabParent: 0

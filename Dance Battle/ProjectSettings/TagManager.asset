@@ -17,6 +17,8 @@ TagManager:
   - P2punch2
   - P2kick
   - Platform
+  - P2Uppercut
+  - P1Uppercut
   layers:
   - Default
   - TransparentFX

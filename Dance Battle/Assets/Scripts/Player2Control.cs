@@ -12,25 +12,17 @@ public class Player2Control : MonoBehaviour
     public float playerHealth = 100f;
     protected float damage = 5f;
     public Slider healthSlider;
-
     // reference to the other player
     public GameObject otherPlayer;
-
     public GameObject punch1;
     public GameObject punch2;
     public GameObject kick;
     public GameObject uppercut;
     //public GameObject throwDuck;
     //public GameObject block;
-
-    private CircleCollider2D punch1Col;
-    private CapsuleCollider2D kickCol;
     private float attackTime;
-
     private CapsuleCollider2D[] capColliders;
-
     public GameObject gameController;
-
     public Text fightOver;
     private bool grounded;
     private bool uc;
@@ -54,7 +46,7 @@ public class Player2Control : MonoBehaviour
             if (((Input.GetButtonDown("A") && Input.GetButton("Y")) || ((Input.GetKeyDown(KeyCode.K)) && Input.GetKeyDown(KeyCode.UpArrow))) && !anime.GetBool("moving") && Time.time > attackTime + .3 && anime.GetBool("onGround"))
             {
                 anime.SetBool("uppercut", true);
-                uppercut.transform.Translate(new Vector3(-.70f, 1.24f, 0));
+                uppercut.transform.Translate(new Vector3(-.96f*2, 1.24f, 0));
                 attackTime = Time.time;
                 uc = true;
             }
@@ -64,25 +56,25 @@ public class Player2Control : MonoBehaviour
         {
 
             anime.SetBool("uppercut", false);
-            uppercut.transform.Translate(new Vector3(.70f, -1.240f, 0));
+            uppercut.transform.Translate(new Vector3(.96f * 2, -1.240f, 0));
             uc = false; 
 
         }
         // movement keys -----------------------------------------------------------
         //Right
-        if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("Horizontal") > 0) && !anime.GetBool("crouching"))
+        if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("LeftJoystickX") > 0) && !anime.GetBool("crouching"))
         {
             transform.Translate(Vector2.right * 3f * Time.deltaTime);
             anime.SetBool("moving", true);
         }
         //Left
-        else if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") < 0) && !anime.GetBool("crouching"))
+        else if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetAxis("LeftJoystickX") < 0) && !anime.GetBool("crouching"))
         {
             transform.Translate(Vector2.left * 3f * Time.deltaTime);
             anime.SetBool("moving", true);
         }
         //crouch
-        else if (Input.GetAxis("Vertical") == -1 && anime.GetBool("onGround") || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetAxis("LeftJoystickY") == -1 && anime.GetBool("onGround") || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKey(KeyCode.DownArrow))
         {
             anime.SetBool("moving", false);
             anime.SetBool("crouching", true);
@@ -98,7 +90,7 @@ public class Player2Control : MonoBehaviour
             rigid.AddForce(Vector2.up * 575f);
         }
         //uncrouch
-        if ((Input.GetAxis("Vertical") == 0) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+        if ((Input.GetAxis("LeftJoystickY") == 0) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
         {
             anime.SetBool("crouching", false);
             capColliders[0].offset = new Vector2(capColliders[0].offset.x, .17f);
@@ -107,42 +99,10 @@ public class Player2Control : MonoBehaviour
             punch1.transform.position = new Vector3(kick.transform.position.x, 0f, 0);
         }
         //stand still
-        if ((Input.GetAxis("Horizontal") == 0) || (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)))
+        if ((Input.GetAxis("LeftJoystickX") == 0) || (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)))
         {
             anime.SetBool("moving", false);
         }
-
-        //if (Input.GetKey(KeyCode.LeftArrow)  && !anime.GetBool("crouching"))
-        //{
-        //    transform.Translate(Vector2.left * 3f * Time.deltaTime);
-        //    anime.SetBool("moving", true);
-        //}
-
-
-        //if (Input.GetKeyDown(KeyCode.DownArrow) && anime.GetBool("onGround"))
-        //{
-        //    anime.SetBool("moving", false);
-        //    anime.SetBool("crouching", true);
-        //    capColliders[0].offset = new Vector2(capColliders[0].offset.x, -1f);
-        //    capColliders[2].offset = new Vector2(capColliders[2].offset.x, 0f);
-        //    kick.transform.Translate(new Vector3(0, -2f, 0));
-        //    punch1.transform.Translate(new Vector3(0, -2f, 0));
-
-        //}
-
-        //if (Input.GetAxis("Vertical") == 0)
-        //{
-        //    //cap[1].enabled = false;
-        //    //cap[0].enabled = true;
-        //    //GetComponentInChildren<EdgeCollider2D>().enabled = true;
-        //    //transform.position = new Vector2(transform.localPosition.x, -2.96f);
-        //    anime.SetBool("crouching", false);
-        //    capColliders[0].offset = new Vector2(capColliders[0].offset.x, .17f);
-        //    capColliders[2].offset = new Vector2(capColliders[2].offset.x, 1.02f);
-        //    kick.transform.Translate(new Vector3(0, 2f, 0));
-        //    punch1.transform.Translate(new Vector3(0, 2f, 0));
-
-        //}
 
         // action keys -------------------------------------------------------------
         //punch1
@@ -167,11 +127,6 @@ public class Player2Control : MonoBehaviour
             kick.transform.Translate(new Vector3(-2.06f, 0, 0));
             attackTime = Time.time;
         }
-        //Stop punching 1 if held down
-        //if ((Input.GetButton("X") || Input.GetKey(KeyCode.J)) && !anime.GetBool("moving") && Time.time > attackTime + .3 && anime.GetBool("onGround"))
-        //{
-        //    anime.SetBool("punching", false);
-        //}
         //Stop punching 1  on release
         if ((Input.GetButtonUp("X") || Input.GetKeyUp(KeyCode.J)) && anime.GetBool("punching"))
         {
@@ -180,11 +135,7 @@ public class Player2Control : MonoBehaviour
             punch1.transform.Translate(new Vector3(3.04f, 0, 0));
 
         }
-        //Stop punch 2 if held down
-        //if ((Input.GetButton("A") || Input.GetKey(KeyCode.K)) && !anime.GetBool("moving") && Time.time > attackTime + .3 && anime.GetBool("onGround"))
-        //{
-        //    anime.SetBool("punch2", false);
-        //}
+
         //Stop punch 2 if released
         if ((Input.GetButtonUp("A") || Input.GetKeyUp(KeyCode.K)) && anime.GetBool("punch2"))
         {
@@ -193,28 +144,7 @@ public class Player2Control : MonoBehaviour
             punch2.transform.Translate(new Vector3(2.33f, 0, 0));
 
         }
-        //Stop uppercut on hold down
-        //if ((((Input.GetButton("A") && Input.GetButton("Y")) || (Input.GetKey(KeyCode.K)) && Input.GetKey(KeyCode.UpArrow))) && !anime.GetBool("moving") && Time.time > attackTime + .3 && anime.GetBool("onGround"))
-        //{
-        //    anime.SetBool("uppercut", false);
-        //}
-        //Stop uppercut on release
-        //if ((((Input.GetButtonUp("A") && Input.GetButtonUp("Y")) || (Input.GetKeyUp(KeyCode.K) && Input.GetKey(KeyCode.UpArrow)))) && anime.GetBool("punch2"))
-        //{
-
-        //    anime.SetBool("uppercut", false);
-        //    uppercut.transform.Translate(new Vector3(.70f, -1.240f, 0));
-
-        //}
-
-
-        //if ((Input.GetButton("A") ||Input.GetKey(KeyCode.O) )&& !anime.GetBool("moving") && Time.time > attackTime + .4 && anime.GetBool("onGround"))
-        //{
-        //    anime.SetBool("kicking", false);
-
-        //    //kickCol.enabled = false;
-
-        //}
+        
         if ((Input.GetButtonUp("B") || Input.GetKeyUp(KeyCode.O)) && anime.GetBool("kicking"))
         {
             anime.SetBool("kicking", false);
@@ -284,7 +214,12 @@ public class Player2Control : MonoBehaviour
         }
         if (collider.gameObject.tag == "P1punch2")
         {
-            playerHealth -= 7;
+            playerHealth -= 3;
+            healthSlider.value = playerHealth;
+        }
+        if (collider.gameObject.tag == "P1Uppercut")
+        {
+            playerHealth -= 15;
             healthSlider.value = playerHealth;
         }
         if (collider.gameObject.tag == "P1kick")
@@ -299,24 +234,4 @@ public class Player2Control : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collider)
-    {
-        if (collider.gameObject.tag == "P1punch1")
-        {
-
-            Debug.Log("player 1 punched me");
-        }
-        if (collider.gameObject.tag == "P1punch2")
-        {
-
-        }
-        if (collider.gameObject.tag == "P1kick")
-        {
-
-        }
-        if (collider.gameObject.tag == "P1throwChicken")
-        {
-
-        }
-    }
 }
