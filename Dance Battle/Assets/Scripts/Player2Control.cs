@@ -57,7 +57,7 @@ public class Player2Control : MonoBehaviour
             anime.SetBool("moving", false);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && !anime.GetBool("crouching"))
+        if (Input.GetKey(KeyCode.LeftArrow)  && !anime.GetBool("crouching"))
         {
             transform.Translate(Vector2.left * 3f * Time.deltaTime);
             anime.SetBool("moving", true);
@@ -67,15 +67,20 @@ public class Player2Control : MonoBehaviour
             anime.SetBool("moving", false);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow) && anime.GetBool("onGround"))
+        if (Input.GetKeyDown(KeyCode.DownArrow) && anime.GetBool("onGround"))
         {
-            //cap[0].enabled = false;
-            //cap[1].enabled = true;
-            //GetComponentInChildren<EdgeCollider2D>().enabled = false;
-            //transform.position = new Vector2(transform.localPosition.x, -3.24f);
+            anime.SetBool("moving", false);
             anime.SetBool("crouching", true);
             capColliders[0].offset = new Vector2(capColliders[0].offset.x, -1f);
             capColliders[2].offset = new Vector2(capColliders[2].offset.x, 0f);
+            kick.transform.Translate(new Vector3(0, -2f, 0));
+            punch1.transform.Translate(new Vector3(0, -2f, 0));
+
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow) && anime.GetBool("onGround"))
+        {
+            anime.SetBool("crouching", true);
+
         }
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
@@ -86,6 +91,9 @@ public class Player2Control : MonoBehaviour
             anime.SetBool("crouching", false);
             capColliders[0].offset = new Vector2(capColliders[0].offset.x, .17f);
             capColliders[2].offset = new Vector2(capColliders[2].offset.x, 1.02f);
+            kick.transform.Translate(new Vector3(0, 2f, 0));
+            punch1.transform.Translate(new Vector3(0, 2f, 0));
+
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && anime.GetBool("onGround"))

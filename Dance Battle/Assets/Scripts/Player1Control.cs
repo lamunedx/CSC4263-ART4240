@@ -71,12 +71,18 @@ public class Player1Control : MonoBehaviour
             anime.SetBool("moving", false);
         }
 
-        if (Input.GetKey(KeyCode.S) && anime.GetBool("onGround"))
+        if (Input.GetKeyDown(KeyCode.S) && anime.GetBool("onGround"))
         {
             anime.SetBool("crouching", true);
             capColliders[0].offset = new Vector2(capColliders[0].offset.x, -1f);
             capColliders[2].offset = new Vector2(capColliders[2].offset.x, 0f);
+            kick.transform.Translate(new Vector3(0, -2f, 0));
+            punch1.transform.Translate(new Vector3(0, -2f, 0));
 
+        }
+        if (Input.GetKeyDown(KeyCode.S) && anime.GetBool("onGround"))
+        {
+            anime.SetBool("crouching", true);
 
         }
         if (Input.GetKeyUp(KeyCode.S))
@@ -88,7 +94,9 @@ public class Player1Control : MonoBehaviour
             anime.SetBool("crouching", false);
             capColliders[0].offset = new Vector2(capColliders[0].offset.x, .17f);
             capColliders[2].offset = new Vector2(capColliders[2].offset.x, 1.02f);
-            
+            kick.transform.Translate(new Vector3(0, 2f, 0));
+            punch1.transform.Translate(new Vector3(0, 2f, 0));
+
         }
 
         if (Input.GetKeyDown(KeyCode.W) && anime.GetBool("onGround"))
@@ -97,41 +105,41 @@ public class Player1Control : MonoBehaviour
         }
 
         // action keys -------------------------------------------------------------
-        if (Input.GetKeyDown(KeyCode.Z) && !anime.GetBool("moving") && Time.time > attackTime + .6 && anime.GetBool("onGround"))
+        if (Input.GetKeyDown(KeyCode.Z) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
         {
             anime.SetBool("punching", true);
-            punch1Col.enabled = true;
+            punch1.transform.Translate(new Vector3(-3.04f, 0, 0));
             Debug.Log("punch");
             attackTime = Time.time;
         }
-        if (Input.GetKey(KeyCode.Z) && !anime.GetBool("moving") && Time.time > attackTime + .6 && anime.GetBool("onGround"))
-        {
-            anime.SetBool("punching", false);
-            punch1Col.enabled = false;
+        //if (Input.GetKey(KeyCode.Z) && !anime.GetBool("moving") && Time.time > attackTime + .6 && anime.GetBool("onGround"))
+        //{
+        //    anime.SetBool("punching", false);
+        //    punch1Col.enabled = false;
 
-        }
+        //}
         if (Input.GetKeyUp(KeyCode.Z) && anime.GetBool("punching"))
         {
             anime.SetBool("punching", false);
-            punch1Col.enabled = false;
+            punch1.transform.Translate(new Vector3(3.04f, 0, 0));
             Debug.Log("punchStop");
         }
-        if (Input.GetKeyDown(KeyCode.X) && !anime.GetBool("moving") && Time.time > attackTime + .65 && anime.GetBool("onGround"))
+        if (Input.GetKeyDown(KeyCode.X) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
         {
             anime.SetBool("kicking", true);
-            kickCol.enabled = true;
+            kick.transform.Translate(new Vector3(-2.06f, 0, 0));
             attackTime = Time.time;
         }
-        if (Input.GetKey(KeyCode.X) && !anime.GetBool("moving") && Time.time > attackTime + .65 && anime.GetBool("onGround"))
-        {
-            anime.SetBool("kicking", false);
-            kickCol.enabled = false;
+        //if (Input.GetKey(KeyCode.X) && !anime.GetBool("moving") && Time.time > attackTime + .65 && anime.GetBool("onGround"))
+        //{
+        //    anime.SetBool("kicking", false);
+        //    kickCol.enabled = false;
 
-        }
+        //}
         if (Input.GetKeyUp(KeyCode.X) && anime.GetBool("kicking"))
         {
             anime.SetBool("kicking", false);
-            kickCol.enabled = false;
+            kick.transform.Translate(new Vector3(2.06f, 0, 0));
         }
 
         // make sure the player is facing the right direction
