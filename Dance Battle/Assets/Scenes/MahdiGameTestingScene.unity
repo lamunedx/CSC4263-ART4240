@@ -332,11 +332,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4449989105124074, guid: be3f41738fb010443991caea56689d8a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4449989105124074, guid: be3f41738fb010443991caea56689d8a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.62
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 4449989105124074, guid: be3f41738fb010443991caea56689d8a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -386,6 +386,12 @@ Prefab:
       propertyPath: m_TagString
       value: P2punch2
       objectReference: {fileID: 0}
+    - target: {fileID: 212829701711119062, guid: be3f41738fb010443991caea56689d8a,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0e0eddd67583c0649b0af3f49ef05e29,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be3f41738fb010443991caea56689d8a, type: 2}
   m_IsPrefabParent: 0
@@ -712,11 +718,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4051304174030896, guid: 64b595ab643c7bf4d913960d69022beb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.567239
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4051304174030896, guid: 64b595ab643c7bf4d913960d69022beb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.76
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 4051304174030896, guid: 64b595ab643c7bf4d913960d69022beb, type: 2}
       propertyPath: m_LocalPosition.z
@@ -762,10 +768,6 @@ Prefab:
       propertyPath: fightOver
       value: 
       objectReference: {fileID: 1086850056}
-    - target: {fileID: 1932481422423710, guid: 64b595ab643c7bf4d913960d69022beb, type: 2}
-      propertyPath: m_TagString
-      value: P1punch2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64b595ab643c7bf4d913960d69022beb, type: 2}
   m_IsPrefabParent: 0
