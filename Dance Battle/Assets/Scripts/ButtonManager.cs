@@ -13,4 +13,9 @@ public class ButtonManager : MonoBehaviour {
     public void Players() {
     SceneManager.LoadScene("CharacterSelectionNew");
     }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
