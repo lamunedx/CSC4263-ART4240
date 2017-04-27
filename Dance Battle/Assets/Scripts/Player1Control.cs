@@ -27,6 +27,7 @@ public class Player1Control : MonoBehaviour
     public Text fightOver;
     private bool grounded;
     private bool uc;
+	private bool controller = false;
 
 
     void Awake()
@@ -41,6 +42,9 @@ public class Player1Control : MonoBehaviour
         capColliders = gameObject.GetComponents<CapsuleCollider2D>();
         grounded = true;
         uc = false;
+		if(Input.GetJoystickNames()[0] != ""){
+			controller = true;
+		}
     }
 
     void Update()
@@ -105,7 +109,7 @@ public class Player1Control : MonoBehaviour
             punch1.transform.position = new Vector3(kick.transform.position.x, 0f, 0);
         }
         //stand still
-        if ((Input.GetAxis("LeftJoystickX1") == 0) || (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)))
+        if ((Input.GetAxis("LeftJoystickX1") == 0 && controller)  || (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)))
         {
             anime.SetBool("moving", false);
         }
