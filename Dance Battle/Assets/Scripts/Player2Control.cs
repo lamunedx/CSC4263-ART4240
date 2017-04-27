@@ -179,6 +179,8 @@ public class Player2Control : MonoBehaviour
             fightOver.text = "PLAYER 1 WINS";
             otherPlayer.GetComponent<Player1Control>().enabled = false;
             this.GetComponent<Player2Control>().enabled = false;
+			transform.Translate (0,0,-1f);
+			anime.Play ("koed");
 
         }
     }

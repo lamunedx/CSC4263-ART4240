@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 70419815741101372}
   m_Layer: 0
   m_Name: uppercut
-  m_TagString: Untagged
+  m_TagString: P1Uppercut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,7 +325,7 @@ MonoBehaviour:
   punch1: {fileID: 1459497309505870}
   punch2: {fileID: 1932481422423710}
   kick: {fileID: 1123630119638306}
-  uppercut: {fileID: 0}
+  uppercut: {fileID: 1401333142536722}
   gameController: {fileID: 0}
   fightOver: {fileID: 0}
 --- !u!212 &212318835196082358
