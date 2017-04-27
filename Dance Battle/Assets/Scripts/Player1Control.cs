@@ -48,10 +48,10 @@ public class Player1Control : MonoBehaviour
         //uppercut combo
         if (uc == false)
         {
-            if (((Input.GetButtonDown("A1") && Input.GetButton("Y1")) || ((Input.GetKeyDown(KeyCode.E)) && Input.GetKeyDown(KeyCode.W))) && !anime.GetBool("moving") && Time.time > attackTime + .3 && anime.GetBool("onGround"))
+            if (((Input.GetButtonDown("A1") && Input.GetAxis("LeftJoystickY1") > 0) || (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.W))) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
             {
                 anime.SetBool("uppercut", true);
-                uppercut.transform.Translate(new Vector3(-.70f, 1.24f, 0));
+                uppercut.transform.Translate(new Vector3(-2.3f, 1.24f, 0));
                 attackTime = Time.time;
                 uc = true;
             }
@@ -61,7 +61,7 @@ public class Player1Control : MonoBehaviour
         {
 
             anime.SetBool("uppercut", false);
-            uppercut.transform.Translate(new Vector3(.70f, -1.240f, 0));
+            uppercut.transform.Translate(new Vector3(2.3f, -1.240f, 0));
             uc = false;
 
         }
@@ -79,7 +79,7 @@ public class Player1Control : MonoBehaviour
             anime.SetBool("moving", true);
         }
         //crouch
-        else if (Input.GetAxis("LeftJoystickY1") == -1 && anime.GetBool("onGround") || Input.GetKeyDown(KeyCode.S) || Input.GetKey(KeyCode.S))
+        else if ((Input.GetAxis("LeftJoystickY1") < 0 || Input.GetKeyDown(KeyCode.S) || Input.GetKey(KeyCode.S)) && anime.GetBool("onGround"))
         {
             anime.SetBool("moving", false);
             anime.SetBool("crouching", true);
@@ -90,12 +90,13 @@ public class Player1Control : MonoBehaviour
 
         }
         //Jump
-        else if ((Input.GetButtonDown("Y1") || Input.GetKeyDown(KeyCode.W)) && grounded)
+        else if ((Input.GetButtonDown("Y1") || Input.GetKeyDown(KeyCode.Space)) && grounded)
         {
+            anime.SetBool("jumping", true);
             rigid.AddForce(Vector2.up * 575f);
         }
         //uncrouch
-        if ((Input.GetAxis("LeftJoystickY1") == 0) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
+        if ((Input.GetAxis("LeftJoystickY1") == 0) || Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.S))
         {
             anime.SetBool("crouching", false);
             capColliders[0].offset = new Vector2(capColliders[0].offset.x, .17f);
@@ -111,21 +112,21 @@ public class Player1Control : MonoBehaviour
 
         // action keys -------------------------------------------------------------
         //punch1
-        if ((Input.GetButtonDown("X1") || Input.GetKeyDown(KeyCode.R)) && !anime.GetBool("moving") && Time.time > attackTime + .2 && anime.GetBool("onGround"))
+        if ((Input.GetButtonDown("X1") || Input.GetKeyDown(KeyCode.R)) && !anime.GetBool("moving") && Time.time > attackTime + .4 && anime.GetBool("onGround"))
         {
             anime.SetBool("punching", true);
             punch1.transform.Translate(new Vector3(-3.04f, 0, 0));
             attackTime = Time.time;
         }
         //punch 2
-        else if ((Input.GetButtonDown("A1") || Input.GetKeyDown(KeyCode.E)) && !anime.GetBool("moving") && Time.time > attackTime + .2 && anime.GetBool("onGround"))
+        else if ((Input.GetButtonDown("A1") || Input.GetKeyDown(KeyCode.E)) && !anime.GetBool("moving") && Time.time > attackTime + .4 && anime.GetBool("onGround"))
         {
             anime.SetBool("punch2", true);
             punch2.transform.Translate(new Vector3(-2.33f, 0, 0));
             attackTime = Time.time;
         }
         //kick
-        else if ((Input.GetButtonDown("B1") || Input.GetKeyDown(KeyCode.F)) && !anime.GetBool("moving") && Time.time > attackTime + .6 && anime.GetBool("onGround"))
+        else if ((Input.GetButtonDown("B1") || Input.GetKeyDown(KeyCode.F)) && !anime.GetBool("moving") && Time.time > attackTime + .9 && anime.GetBool("onGround"))
         {
             anime.SetBool("kicking", true);
             //kickCol.enabled = true;
@@ -171,10 +172,21 @@ public class Player1Control : MonoBehaviour
         }
         if (playerHealth <= 0)
         {
+
+            anime.SetBool("punching", false);
+            anime.SetBool("punch2", false);
+            anime.SetBool("uppercut", false);
+            anime.SetBool("kicking", false);
+            anime.SetBool("jumping", false);
+            anime.SetBool("moving", false);
             anime.SetBool("crouching", true);
             otherPlayer.GetComponent<Animator>().SetBool("punching", false);
+            otherPlayer.GetComponent<Animator>().SetBool("punch2", false);
+            otherPlayer.GetComponent<Animator>().SetBool("uppercut", false);
             otherPlayer.GetComponent<Animator>().SetBool("kicking", false);
             otherPlayer.GetComponent<Animator>().SetBool("moving", false);
+            otherPlayer.GetComponent<Animator>().SetBool("jumping", false);
+            otherPlayer.GetComponent<Animator>().SetBool("crouching", false);
             gameController.GetComponent<fightTime>().enabled = false;
             gameController.GetComponent<fightTime>().StopAllCoroutines();
             fightOver.fontSize = 200;
