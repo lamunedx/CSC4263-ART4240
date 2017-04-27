@@ -7,13 +7,22 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
+    guid: 0c2669d56969c1a428bf294123493d04
   - enabled: 1
     path: Assets/Scenes/CharacterSelection.unity
-  - enabled: 1
+    guid: 8e7d6e4aaab8ebc4381f1c711263da54
+  - enabled: 0
     path: Assets/Scenes/CharacterEncyclopedia.unity
+    guid: 628853b014149c54aabe9b9ba09ad904
   - enabled: 1
     path: Assets/Scenes/MahdiGameTestingScene.unity
+    guid: 10989a2cfd62a0d4a8d948ace9d9aab6
   - enabled: 0
     path: Assets/Scenes/Player2Selection.unity
+    guid: f0e8fced0c6a8924ba1de48e5a0f17cf
   - enabled: 0
     path: Assets/Scenes/Game.unity
+    guid: 74075e5ceb4a52241a181c5ffd883ae2
+  - enabled: 1
+    path: Assets/Scenes/CharacterSelectionNew.unity
+    guid: 4a28b8c051c66aa4caf9099af644d233

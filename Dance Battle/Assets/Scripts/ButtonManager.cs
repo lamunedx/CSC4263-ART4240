@@ -5,30 +5,30 @@ using UnityEngine.SceneManagement;
 
 // This manages all the buttons in the game
 public class ButtonManager : MonoBehaviour {
-    public GameObject charlist1;
-    public GameObject charlist2;
+    public GameObject Player1CharacterList;
+    public GameObject Player2CharacterList;
     private GameObject[] charList1;
     private GameObject[] charList2;
     private int index1 = 0;
     private int index2 = 0;
 
     public void Play() {
-        SceneManager.LoadScene("CharacterSelection");
+        SceneManager.LoadScene("MahdiGameTestingScene");
     }
 
     // List all the playable characters in the game
     public void Players() {
-    SceneManager.LoadScene("CharacterEncyclopedia");
+    SceneManager.LoadScene("CharacterSelectionNew");
     }
 
     private void Start() {
         //fill array with models
-        charList1 = new GameObject[charlist1.transform.childCount];
-        charList2 = new GameObject[charlist2.transform.childCount];
+        charList1 = new GameObject[Player1CharacterList.transform.childCount];
+        charList2 = new GameObject[Player2CharacterList.transform.childCount];
 
-        for (int i = 0; i < charlist1.transform.childCount; i++) {
-            charList1[i] = charlist1.transform.GetChild(i).gameObject;
-            charList2[i] = charlist2.transform.GetChild(i).gameObject;
+        for (int i = 0; i < Player1CharacterList.transform.childCount; i++) {
+            charList1[i] = Player1CharacterList.transform.GetChild(i).gameObject;
+            charList2[i] = Player2CharacterList.transform.GetChild(i).gameObject;
         }
 
         // toggle of the renderer for player 1's list
@@ -90,7 +90,57 @@ public class ButtonManager : MonoBehaviour {
         }
     }
 
-    public void SelectPlayer2Play() {
-        SceneManager.LoadScene("Game");
+    public void Update()
+    {
+        //player 1 toggle characters
+        if (Input.GetKeyDown(KeyCode.D)){
+            charList1[index1].SetActive(false);
+            index1++;
+            if (index1 == charList1.Length)
+            {
+                index1 = 0;
+            }
+            charList1[index1].SetActive(true);
+        }
+        else if (Input.GetKey(KeyCode.A)){
+            charList1[index1].SetActive(false);
+            index1--;
+            if (index1 < 0)
+            {
+                index1 = 0;
+            }
+            charList1[index1].SetActive(true);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+
+        }
+
+        //player 2 toggle characters
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            charList2[index2].SetActive(false);
+            index2++;
+            if (index2 == charList2.Length)
+            {
+                index2 = 0;
+            }
+            charList2[index2].SetActive(true);
+
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            charList2[index2].SetActive(false);
+            index2--;
+            if (index2 < 0)
+            {
+                index2 = 0;
+            }
+            charList2[index2].SetActive(true);
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+
+        }
     }
 }
