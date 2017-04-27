@@ -53,7 +53,7 @@ public class Player2Control : MonoBehaviour
             if (((Input.GetButtonDown("A") && Input.GetAxis("LeftJoystickY") > 0) || (Input.GetKeyDown(KeyCode.K) && Input.GetKey(KeyCode.UpArrow))) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
             {
                 anime.SetBool("uppercut", true);
-                uppercut.transform.Translate(new Vector3(-2.3f, 1.24f, 0));
+                uppercut.transform.Translate(new Vector3(-3.3f, 1.24f, 0));
                 attackTime = Time.time;
                 uc = true;
             }
@@ -63,7 +63,7 @@ public class Player2Control : MonoBehaviour
         {
 
             anime.SetBool("uppercut", false);
-            uppercut.transform.Translate(new Vector3(2.3f, -1.240f, 0));
+            uppercut.transform.Translate(new Vector3(3.3f, -1.240f, 0));
             uc = false; 
 
         }
@@ -167,7 +167,7 @@ public class Player2Control : MonoBehaviour
             anime.SetBool("kicking", false);
             anime.SetBool("jumping", false);
             anime.SetBool("moving", false);
-            anime.SetBool("crouching", true);
+            anime.SetBool("crouching", false);
             otherPlayer.GetComponent<Animator>().SetBool("punching", false);
             otherPlayer.GetComponent<Animator>().SetBool("punch2", false);
             otherPlayer.GetComponent<Animator>().SetBool("uppercut", false);
@@ -179,10 +179,11 @@ public class Player2Control : MonoBehaviour
             gameController.GetComponent<fightTime>().StopAllCoroutines();
             fightOver.fontSize = 200;
             fightOver.text = "PLAYER 1 WINS";
+            transform.Translate(0, 0, -1f);
+            anime.Play("koed");
             otherPlayer.GetComponent<Player1Control>().enabled = false;
             this.GetComponent<Player2Control>().enabled = false;
-			transform.Translate (0,0,-1f);
-			anime.Play ("koed");
+
 
         }
     }

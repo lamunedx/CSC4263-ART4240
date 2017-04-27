@@ -121,7 +121,7 @@ public class CharacterList : MonoBehaviour
                 }
             }
         }
-        if (Input.GetButtonDown("X1"))
+        if (Input.GetButtonDown("X1") || Input.GetKeyDown(KeyCode.R))
         {
             if(charList1[0].enabled)
             {
@@ -221,7 +221,7 @@ public class CharacterList : MonoBehaviour
             }
 
         }
-        if (Input.GetButtonDown("X"))
+        if (Input.GetButtonDown("X") || Input.GetKeyDown(KeyCode.K))
         {
             if (charList2[0].enabled)
             {
@@ -250,7 +250,7 @@ public class CharacterList : MonoBehaviour
         // ready to start da fight!!!
         if(p1 && p2)
         {
-            
+            SceneManager.LoadScene("MahdiGameTestingScene");
         }
         //player 1 toggle characters
         //if (Input.GetKeyDown(KeyCode.D))

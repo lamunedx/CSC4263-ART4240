@@ -11,7 +11,7 @@ public class ButtonManager : MonoBehaviour {
 
     // List all the playable characters in the game
     public void Players() {
-    SceneManager.LoadScene("CharacterSelectionNew");
+    SceneManager.LoadScene("CharacterSelectionMahdi");
     }
 
     public void Credits()
