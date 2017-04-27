@@ -130,6 +130,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 212861500054839536, guid: 44ede88e34c949647b44852b4ea4f280,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 212861500054839536, guid: 44ede88e34c949647b44852b4ea4f280,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.56
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44ede88e34c949647b44852b4ea4f280, type: 2}
   m_IsPrefabParent: 0
@@ -349,6 +359,7 @@ Prefab:
       propertyPath: fightOver
       value: 
       objectReference: {fileID: 1086850056}
+<<<<<<< HEAD
     - target: {fileID: 1333872257342098, guid: be3f41738fb010443991caea56689d8a, type: 2}
       propertyPath: m_TagString
       value: P2punch2
@@ -363,6 +374,8 @@ Prefab:
       propertyPath: m_TagString
       value: player2
       objectReference: {fileID: 0}
+=======
+>>>>>>> f7fe9b8ab0095a541e388c89a36268457cf97bda
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be3f41738fb010443991caea56689d8a, type: 2}
   m_IsPrefabParent: 0

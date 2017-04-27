@@ -42,6 +42,7 @@ public class Player1Control : MonoBehaviour
         capColliders = gameObject.GetComponents<CapsuleCollider2D>();
         grounded = true;
         uc = false;
+
 		if(Input.GetJoystickNames()[0] != ""){
 			controller = true;
 		}
@@ -50,7 +51,7 @@ public class Player1Control : MonoBehaviour
     void Update()
     {
         //uppercut combo
-        if (uc == false)
+        if (!uc)
         {
             if (((Input.GetButtonDown("A1") && Input.GetAxis("LeftJoystickY1") > 0) || (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.W))) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
             {
@@ -100,7 +101,7 @@ public class Player1Control : MonoBehaviour
             rigid.AddForce(Vector2.up * 575f);
         }
         //uncrouch
-        if ((Input.GetAxis("LeftJoystickY1") == 0) || Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.S))
+		if (((Input.GetAxis("LeftJoystickY1") == 0) && controller)|| Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.S))
         {
             anime.SetBool("crouching", false);
             capColliders[0].offset = new Vector2(capColliders[0].offset.x, .17f);
@@ -109,7 +110,7 @@ public class Player1Control : MonoBehaviour
             punch1.transform.position = new Vector3(kick.transform.position.x, 0f, 0);
         }
         //stand still
-        if ((Input.GetAxis("LeftJoystickX1") == 0 && controller)  || (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)))
+        if ((Input.GetAxis("LeftJoystickX1") == 0 && controller)  || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             anime.SetBool("moving", false);
         }
@@ -197,6 +198,8 @@ public class Player1Control : MonoBehaviour
             fightOver.text = "PLAYER 2 WINS";
             otherPlayer.GetComponent<Player2Control>().enabled = false;
             this.GetComponent<Player1Control>().enabled = false;
+			transform.Translate (0,0,-1f);
+			anime.Play ("koed");
 
         }
     }
@@ -225,7 +228,6 @@ public class Player1Control : MonoBehaviour
         if (collision.gameObject.name == "Platform")
         {
             anime.SetBool("onGround", false);
-            anime.SetBool("jumping", true);
             grounded = false;
         }
     }
@@ -236,21 +238,25 @@ public class Player1Control : MonoBehaviour
         {
             playerHealth -= 5;
             healthSlider.value = playerHealth;
+			anime.Play ("Damaged");
         }
         if (collider.gameObject.tag == "P2punch2")
         {
             playerHealth -= 3;
             healthSlider.value = playerHealth;
+			anime.Play ("Damaged");
         }
         if (collider.gameObject.tag == "P2Uppercut")
         {
             playerHealth -= 15;
             healthSlider.value = playerHealth;
+			anime.Play ("Damaged");
         }
         if (collider.gameObject.tag == "P2kick")
         {
             playerHealth -= 10;
             healthSlider.value = playerHealth;
+			anime.Play ("Damaged");
         }
         if (collider.gameObject.tag == "P2throwChicken")
         {

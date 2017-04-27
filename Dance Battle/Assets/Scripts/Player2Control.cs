@@ -26,6 +26,7 @@ public class Player2Control : MonoBehaviour
     public Text fightOver;
     private bool grounded;
     private bool uc;
+	private bool controller = false;
 
     void Awake()
     {
@@ -37,11 +38,15 @@ public class Player2Control : MonoBehaviour
         capColliders = gameObject.GetComponents<CapsuleCollider2D>();
         grounded = true;
         uc = false;
+
+		if(Input.GetJoystickNames()[0] != ""){
+			controller = true;
+		}
     }
 
     void Update()
     {   //uppercut combo
-        if (uc == false)
+        if (!uc)
         {
             if (((Input.GetButtonDown("A") && Input.GetAxis("LeftJoystickY") > 0) || (Input.GetKeyDown(KeyCode.K) && Input.GetKey(KeyCode.UpArrow))) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
             {
@@ -91,7 +96,7 @@ public class Player2Control : MonoBehaviour
             rigid.AddForce(Vector2.up * 575f);
         }
         //uncrouch
-        if ((Input.GetAxis("LeftJoystickY") == 0) || Input.GetKeyUp(KeyCode.KeypadEnter) || Input.GetKeyUp(KeyCode.DownArrow))
+		if (((Input.GetAxis("LeftJoystickY") == 0)&& controller) || Input.GetKeyUp(KeyCode.KeypadEnter) || Input.GetKeyUp(KeyCode.DownArrow))
         {
             anime.SetBool("crouching", false);
             capColliders[0].offset = new Vector2(capColliders[0].offset.x, .17f);
@@ -100,7 +105,7 @@ public class Player2Control : MonoBehaviour
             punch1.transform.position = new Vector3(kick.transform.position.x, 0f, 0);
         }
         //stand still
-        if ((Input.GetAxis("LeftJoystickX") == 0) || (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)))
+		if (((Input.GetAxis("LeftJoystickX") == 0 && controller)) || (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)))
         {
             anime.SetBool("moving", false);
         }
@@ -174,6 +179,8 @@ public class Player2Control : MonoBehaviour
             fightOver.text = "PLAYER 1 WINS";
             otherPlayer.GetComponent<Player1Control>().enabled = false;
             this.GetComponent<Player2Control>().enabled = false;
+			transform.Translate (0,0,-1f);
+			anime.Play ("koed");
 
         }
     }
@@ -186,10 +193,7 @@ public class Player2Control : MonoBehaviour
             anime.SetBool("jumping", false);
             grounded = true;
         }
-        if (collision.gameObject.name == "Player2")
-        {
-            anime.SetBool("jumping", false);
-        }
+
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -199,10 +203,6 @@ public class Player2Control : MonoBehaviour
             anime.SetBool("jumping", false);
             grounded = true;
         }
-        if (collision.gameObject.name == "Player2")
-        {
-            anime.SetBool("jumping", false);
-        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -210,7 +210,6 @@ public class Player2Control : MonoBehaviour
         if (collision.gameObject.name == "Platform")
         {
             anime.SetBool("onGround", false);
-            anime.SetBool("jumping", true);
             grounded = false;
         }
     }
@@ -221,28 +220,33 @@ public class Player2Control : MonoBehaviour
         {
             playerHealth -= 5;
             healthSlider.value = playerHealth;
+			anime.Play ("Damaged");
             Debug.Log("player 1 punched me");
         }
         if (collider.gameObject.tag == "P1punch2")
         {
             playerHealth -= 3;
             healthSlider.value = playerHealth;
+			anime.Play ("Damaged");
         }
         if (collider.gameObject.tag == "P1Uppercut")
         {
             playerHealth -= 15;
             healthSlider.value = playerHealth;
+			anime.Play ("Damaged");
         }
         if (collider.gameObject.tag == "P1kick")
         {
             playerHealth -= 10;
             healthSlider.value = playerHealth;
+			anime.Play ("Damaged");
         }
         if (collider.gameObject.tag == "P1throwChicken")
         {
             playerHealth -= 2;
             healthSlider.value = playerHealth;
         }
+
     }
 
 }
