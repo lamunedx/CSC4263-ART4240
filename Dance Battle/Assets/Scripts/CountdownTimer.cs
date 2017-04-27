@@ -13,6 +13,7 @@ public class CountdownTimer : MonoBehaviour {
     public GameObject player2;
     private int textSize;
     private bool reSize;
+	private bool pl = false;
     AudioSource song;
 
     // Use this for initialization
@@ -37,8 +38,9 @@ public class CountdownTimer : MonoBehaviour {
                 countdownText.fontSize = textSize;
                 reSize = false;
             }
-            if (timeLeft == 1)
+			if (timeLeft == 1 && pl == false)
             {
+				pl = true;
                 song.Play();
             }
             if (timeLeft == 0)

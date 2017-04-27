@@ -28,6 +28,7 @@ public class Player1Control : MonoBehaviour
     private bool grounded;
     private bool uc;
 	private bool controller = false;
+	private AudioSource hitting;
 
 
     void Awake()
@@ -46,6 +47,7 @@ public class Player1Control : MonoBehaviour
 		if(Input.GetJoystickNames()[0] != ""){
 			controller = true;
 		}
+		hitting = GetComponent<AudioSource> ();
     }
 
     void Update()
@@ -122,6 +124,7 @@ public class Player1Control : MonoBehaviour
             anime.SetBool("punching", true);
             punch1.transform.Translate(new Vector3(-3.04f, 0, 0));
             attackTime = Time.time;
+
         }
         //punch 2
         else if ((Input.GetButtonDown("A1") || Input.GetKeyDown(KeyCode.E)) && !anime.GetBool("moving") && Time.time > attackTime + .4 && anime.GetBool("onGround"))
@@ -239,29 +242,34 @@ public class Player1Control : MonoBehaviour
             playerHealth -= 5;
             healthSlider.value = playerHealth;
 			anime.Play ("Damaged");
+			hitting.Play ();
         }
         if (collider.gameObject.tag == "P2punch2")
         {
             playerHealth -= 3;
             healthSlider.value = playerHealth;
 			anime.Play ("Damaged");
+			hitting.Play ();
         }
         if (collider.gameObject.tag == "P2Uppercut")
         {
             playerHealth -= 15;
             healthSlider.value = playerHealth;
 			anime.Play ("Damaged");
+			hitting.Play ();
         }
         if (collider.gameObject.tag == "P2kick")
         {
             playerHealth -= 10;
             healthSlider.value = playerHealth;
 			anime.Play ("Damaged");
+			hitting.Play ();
         }
         if (collider.gameObject.tag == "P2throwChicken")
         {
             playerHealth -= 2;
             healthSlider.value = playerHealth;
+			hitting.Play ();
         }
     }
 

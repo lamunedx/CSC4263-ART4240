@@ -27,6 +27,7 @@ public class Player2Control : MonoBehaviour
     private bool grounded;
     private bool uc;
 	private bool controller = false;
+	private AudioSource hitting;
 
     void Awake()
     {
@@ -42,6 +43,7 @@ public class Player2Control : MonoBehaviour
 		if(Input.GetJoystickNames()[0] != ""){
 			controller = true;
 		}
+		hitting = GetComponent<AudioSource> ();
     }
 
     void Update()
@@ -222,29 +224,34 @@ public class Player2Control : MonoBehaviour
             healthSlider.value = playerHealth;
 			anime.Play ("Damaged");
             Debug.Log("player 1 punched me");
+			hitting.Play ();
         }
         if (collider.gameObject.tag == "P1punch2")
         {
             playerHealth -= 3;
             healthSlider.value = playerHealth;
 			anime.Play ("Damaged");
+			hitting.Play ();
         }
         if (collider.gameObject.tag == "P1Uppercut")
         {
             playerHealth -= 15;
             healthSlider.value = playerHealth;
 			anime.Play ("Damaged");
+			hitting.Play ();
         }
         if (collider.gameObject.tag == "P1kick")
         {
             playerHealth -= 10;
             healthSlider.value = playerHealth;
 			anime.Play ("Damaged");
+			hitting.Play ();
         }
         if (collider.gameObject.tag == "P1throwChicken")
         {
             playerHealth -= 2;
             healthSlider.value = playerHealth;
+			hitting.Play ();
         }
 
     }
