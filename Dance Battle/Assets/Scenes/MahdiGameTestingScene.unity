@@ -392,7 +392,30 @@ Prefab:
       propertyPath: fightOver
       value: 
       objectReference: {fileID: 1086850056}
-    m_RemovedComponents: []
+    - target: {fileID: 70839098519439358, guid: be3f41738fb010443991caea56689d8a,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 70182775231982534, guid: be3f41738fb010443991caea56689d8a,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157208628549580, guid: be3f41738fb010443991caea56689d8a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157208628549580, guid: be3f41738fb010443991caea56689d8a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760645404277116, guid: be3f41738fb010443991caea56689d8a, type: 2}
+      propertyPath: m_TagString
+      value: player2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 212571144281721066, guid: be3f41738fb010443991caea56689d8a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: be3f41738fb010443991caea56689d8a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &876438562
@@ -768,6 +791,20 @@ Prefab:
       propertyPath: fightOver
       value: 
       objectReference: {fileID: 1086850056}
+    - target: {fileID: 70026419591488410, guid: 64b595ab643c7bf4d913960d69022beb,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 70730878624006242, guid: 64b595ab643c7bf4d913960d69022beb,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928315057128940, guid: 64b595ab643c7bf4d913960d69022beb, type: 2}
+      propertyPath: m_TagString
+      value: player1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64b595ab643c7bf4d913960d69022beb, type: 2}
   m_IsPrefabParent: 0
