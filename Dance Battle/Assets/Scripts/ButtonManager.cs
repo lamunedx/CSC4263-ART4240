@@ -13,6 +13,10 @@ public class ButtonManager : MonoBehaviour {
     public void Players() {
     SceneManager.LoadScene("CharacterSelectionMahdi");
     }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void Credits()
     {

@@ -24,7 +24,8 @@ public class Player1Control : MonoBehaviour
     private float attackTime;
     private CapsuleCollider2D[] capColliders;
     public GameObject gameController;
-    public Text fightOver;
+    public Canvas endFight;
+    public Image player2wins;
     private bool grounded;
     private bool uc;
 	private bool controller = false;
@@ -56,7 +57,7 @@ public class Player1Control : MonoBehaviour
         //uppercut combo
         if (!uc)
         {
-            if (((Input.GetButtonDown("A1") && Input.GetAxis("LeftJoystickY1") > 0) || (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.W))) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround"))
+            if (((Input.GetButtonDown("A1") && Input.GetAxis("LeftJoystickY1") > 0) || (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.W))) && !anime.GetBool("moving") && Time.time > attackTime + .8 && anime.GetBool("onGround") && !anime.GetBool("uppercut") && !anime.GetBool("blocking"))
             {
                 uppercut.SetActive(true);
                 anime.SetBool("uppercut", true);
@@ -68,7 +69,7 @@ public class Player1Control : MonoBehaviour
         //Stop uppercut on release
         else
         {
-            uppercut.SetActive(false);
+            //uppercut.SetActive(false);
             anime.SetBool("uppercut", false);
             uppercut.transform.Translate(new Vector3(3.3f, -1.240f, 0));
             uc = false;
@@ -120,6 +121,7 @@ public class Player1Control : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.D))
         {
             anime.SetBool("moving", false);
+
         }
         if ((Input.GetAxis("LeftJoystickX1") == 0 && controller))
         {
@@ -160,26 +162,26 @@ public class Player1Control : MonoBehaviour
         //stops punch 1 on hold
         if ((Input.GetButton("X1") || Input.GetKey(KeyCode.R)) && !anime.GetBool("moving") && !anime.GetBool("damaged") && Time.time > attackTime + .2 && anime.GetBool("onGround") && anime.GetBool("punching"))
         {
-            punch1.SetActive(false);
             anime.SetBool("punching", false);
             punch1.transform.Translate(new Vector3(3.04f, 0, 0));
             attackTime = Time.time;
+            //punch1.SetActive(false);
         }
         //stops punch 2 on hold
         if ((Input.GetButton("A1") || Input.GetKey(KeyCode.E)) && !anime.GetBool("moving") && !anime.GetBool("damaged") && Time.time > attackTime + .2&& anime.GetBool("onGround") && anime.GetBool("punch2"))
         {
-            punch2.SetActive(false);
             anime.SetBool("punch2", false);
             punch2.transform.Translate(new Vector3(2.33f, 0, 0));
             attackTime = Time.time;
+            //punch2.SetActive(false);
         }
         //stops kick 1 on hold
         if ((Input.GetButton("B1") || Input.GetKey(KeyCode.F)) && !anime.GetBool("moving") && !anime.GetBool("damaged") && Time.time > attackTime + .35 && anime.GetBool("onGround") && anime.GetBool("kicking"))
         {
-            kick.SetActive(false);
             anime.SetBool("kicking", false);
             kick.transform.Translate(new Vector3(2.06f, 0, 0));
             attackTime = Time.time;
+            //kick.SetActive(false);
         }
         //block on hold
         if ((Input.GetButton("RB1") || Input.GetButton("LB1") || Input.GetKey(KeyCode.Q)) && !anime.GetBool("moving") && !anime.GetBool("damaged") && anime.GetBool("onGround"))
@@ -191,26 +193,24 @@ public class Player1Control : MonoBehaviour
         //Stop punching 1  on release
         if ((Input.GetButtonUp("X1") || Input.GetKeyUp(KeyCode.R)) && anime.GetBool("punching"))
         {
-            punch1.SetActive(false);
             anime.SetBool("punching", false);
             punch1.transform.Translate(new Vector3(3.04f, 0, 0));
-
+            //punch1.SetActive(false);
         }
 
         //Stop punch 2 if released
         if ((Input.GetButtonUp("A1") || Input.GetKeyUp(KeyCode.E)) && anime.GetBool("punch2"))
         {
-            punch2.SetActive(false);
             anime.SetBool("punch2", false);
             punch2.transform.Translate(new Vector3(2.33f, 0, 0));
-
+            //punch2.SetActive(false);
         }
         //Stop kick if released
         if ((Input.GetButtonUp("B1") || Input.GetKeyUp(KeyCode.F)) && anime.GetBool("kicking"))
         {
-            kick.SetActive(false);
             anime.SetBool("kicking", false);
             kick.transform.Translate(new Vector3(2.06f, 0, 0));
+            //kick.SetActive(false);
             //kickCol.enabled = false;
         }
         //stop block on release
@@ -254,9 +254,9 @@ public class Player1Control : MonoBehaviour
             otherPlayer.GetComponent<Animator>().SetBool("damaged", false);
             gameController.GetComponent<fightTime>().enabled = false;
             gameController.GetComponent<fightTime>().StopAllCoroutines();
-            fightOver.fontSize = 200;
-            fightOver.text = "PLAYER 2 WINS";
-            transform.Translate(0, 0, -1f);
+            endFight.enabled = true;
+            player2wins.enabled = true;
+            transform.Translate(1, 0, -1f);
             anime.Play("koed");
             otherPlayer.GetComponent<Player2Control>().enabled = false;
             this.GetComponent<Player1Control>().enabled = false;

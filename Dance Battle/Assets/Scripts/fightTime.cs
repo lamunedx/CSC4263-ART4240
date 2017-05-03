@@ -8,6 +8,10 @@ public class fightTime : MonoBehaviour
     private int timeLeft;
     public Text timer;
     public Text fightover;
+    public Canvas endCanvas;
+    public Image p1;
+    public Image p2;
+    public Image tie;
     public GameObject player1;
     public GameObject player2;
 
@@ -33,16 +37,20 @@ public class fightTime : MonoBehaviour
             {
                 if (player1.GetComponent<Player1Control>().playerHealth > player2.GetComponent<Player2Control>().playerHealth)
                 {
-                    fightover.text = "PLAYER 1 WINS";
+                    endCanvas.enabled = true;
+                    p1.enabled = true;
                 }
                 else if (player1.GetComponent<Player1Control>().playerHealth < player2.GetComponent<Player2Control>().playerHealth)
                 {
-                    fightover.text = "PLAYER 2 WINS";
+                    endCanvas.enabled = true;
+                    p2.enabled = true;
                 }
                 else
                 {
-                    fightover.text = "TIE";
+                    endCanvas.enabled = true;
+                    tie.enabled = true;
                 }
+                timer.text = "";
                 greaterThanZero = false;
                 player1.GetComponent<Player1Control>().enabled = false;
                 player2.GetComponent<Player2Control>().enabled = false;
