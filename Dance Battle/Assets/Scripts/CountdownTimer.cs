@@ -15,6 +15,9 @@ public class CountdownTimer : MonoBehaviour {
     public GameObject set;
     public GameObject go;
     private bool pl = false;
+    private bool pR1 = false;
+    private bool pS1 = false;
+    private bool pG1 = false;
     AudioSource song;
 
     // Use this for initialization
@@ -57,13 +60,26 @@ public class CountdownTimer : MonoBehaviour {
 
                 }
             }
-            if (timeLeft == 1 && pl == false)
+            if (timeLeft == 2 && pl == false && pR1 == false)
+            {
+                song.Play();
+                pR1 = true;
+                ready.GetComponent<AudioSource>().Play();
+            }
+            if (timeLeft == 1 &&  pS1 == false)
             {
 				pl = true;
-                song.Play();
+                pS1 = true;
+                set.GetComponent<AudioSource>().Play();
+            }
+            if (timeLeft == 0 && pG1 == false)
+            {
+                pG1 = true;
+                go.GetComponent<AudioSource>().Play();
             }
             if (timeLeft == 0)
             {
+               
                 countdownText.text = "FIGHT";
                 matchTime.GetComponent<fightTime>().enabled = true;
                 player1.GetComponent<Player1Control>().enabled = true;
@@ -84,7 +100,7 @@ public class CountdownTimer : MonoBehaviour {
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1.5f);
             timeLeft--;
             
         }

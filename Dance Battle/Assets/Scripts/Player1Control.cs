@@ -30,6 +30,7 @@ public class Player1Control : MonoBehaviour
     private bool uc;
 	private bool controller = false;
 	private AudioSource hitting;
+    private AudioSource dying;
 
 
     void Awake()
@@ -47,9 +48,13 @@ public class Player1Control : MonoBehaviour
         string[] joysticks = Input.GetJoystickNames();
 
         if (joysticks.Length != 0){
-            controller = true;
+            if(joysticks[0] != "")
+            {
+                controller = true;
+            }
 		}
-		hitting = GetComponent<AudioSource> ();
+		hitting = GetComponents<AudioSource>()[0];
+        dying = GetComponents<AudioSource>()[1];
     }
 
     void Update()
@@ -258,6 +263,7 @@ public class Player1Control : MonoBehaviour
             player2wins.enabled = true;
             transform.Translate(1, 0, -1f);
             anime.Play("koed");
+            dying.Play();
             otherPlayer.GetComponent<Player2Control>().enabled = false;
             this.GetComponent<Player1Control>().enabled = false;
 			
