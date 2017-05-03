@@ -149,7 +149,7 @@ public class Player2Control : MonoBehaviour
             attackTime = Time.time;
         }
         //block
-        else if ((Input.GetButtonDown("B1") || Input.GetKeyDown(KeyCode.L)) && !anime.GetBool("moving") && !anime.GetBool("damaged") && anime.GetBool("onGround"))
+        else if ((Input.GetButtonDown("RB") || Input.GetButtonDown("LB") || Input.GetKeyDown(KeyCode.L)) && !anime.GetBool("moving") && !anime.GetBool("damaged") && anime.GetBool("onGround"))
         {
             anime.SetBool("blocking", true);
             capColliders[0].enabled = false;
@@ -179,7 +179,7 @@ public class Player2Control : MonoBehaviour
             attackTime = Time.time;
         }
         //block on hold
-        if ((Input.GetButtonDown("B1") || Input.GetKey(KeyCode.L)) && !anime.GetBool("moving") && !anime.GetBool("damaged") && anime.GetBool("onGround"))
+        if ((Input.GetButton("RB") || Input.GetButton("LB") || Input.GetKey(KeyCode.L)) && !anime.GetBool("moving") && !anime.GetBool("damaged") && anime.GetBool("onGround"))
         {
             anime.SetBool("blocking", true);
             capColliders[0].enabled = false;
@@ -210,7 +210,7 @@ public class Player2Control : MonoBehaviour
             kick.transform.Translate(new Vector3(2.06f, 0, 0));
         }
         //stop block on release
-        if ((Input.GetButtonDown("B1") || Input.GetKeyUp(KeyCode.L)) && anime.GetBool("blocking"))
+        if ((Input.GetButtonUp("RB") || Input.GetButtonUp("LB") || Input.GetKeyUp(KeyCode.L)) && anime.GetBool("blocking"))
         {
             anime.SetBool("blocking", false);
             capColliders[0].enabled = true;

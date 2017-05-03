@@ -11,9 +11,10 @@ public class CountdownTimer : MonoBehaviour {
     public GameObject matchTime;
     public GameObject player1;
     public GameObject player2;
-    private int textSize;
-    private bool reSize;
-	private bool pl = false;
+    public GameObject ready;
+    public GameObject set;
+    public GameObject go;
+    private bool pl = false;
     AudioSource song;
 
     // Use this for initialization
@@ -22,8 +23,7 @@ public class CountdownTimer : MonoBehaviour {
         
         song = GetComponent<AudioSource>();
         StartCoroutine("LoseTime");
-        textSize = countdownText.fontSize;
-        reSize = false;
+
     }
 
     // Update is called once per frame
@@ -33,12 +33,31 @@ public class CountdownTimer : MonoBehaviour {
         {
             countdownText.fontSize--;
             countdownText.text = "" + timeLeft;
-            if (reSize)
+            if(timeLeft == 2)
             {
-                countdownText.fontSize = textSize;
-                reSize = false;
+                ready.SetActive(true);
+                ready.transform.localScale = new Vector3(ready.transform.localScale.x - .01f, ready.transform.localScale.y - .01f, ready.transform.localScale.z - .01f);
+
             }
-			if (timeLeft == 1 && pl == false)
+            else if(timeLeft == 1)
+            {
+                {
+                    ready.SetActive(false);
+                    set.SetActive(true);
+                    set.transform.localScale = new Vector3(set.transform.localScale.x - .01f, set.transform.localScale.y - .01f, set.transform.localScale.z - .01f);
+
+                }
+            }
+            else if (timeLeft == 0)
+            {
+                {
+                    set.SetActive(false);
+                    go.SetActive(true);
+                    go.transform.localScale = new Vector3(go.transform.localScale.x - .01f, go.transform.localScale.y - .01f, go.transform.localScale.z - .01f);
+
+                }
+            }
+            if (timeLeft == 1 && pl == false)
             {
 				pl = true;
                 song.Play();
@@ -55,6 +74,7 @@ public class CountdownTimer : MonoBehaviour {
         else if(timeLeft < 0)
         {
             countdownText.text = "";
+            go.SetActive(false);
             StopCoroutine("LoseTime");
             this.GetComponent<CountdownTimer>().enabled = false;
         }
@@ -66,7 +86,6 @@ public class CountdownTimer : MonoBehaviour {
         {
             yield return new WaitForSeconds(1);
             timeLeft--;
-            reSize = true;
             
         }
     }
